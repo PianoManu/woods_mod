@@ -6,6 +6,7 @@ public class ItemList {
 
     public static Item moss_item;
     public static Item mossy_stick;
+    public static Item epidote_gem;
 
 
 
@@ -50,4 +51,6 @@ public class ItemList {
     public static Item mossy_jungle_sapling;
     public static Item mossy_acacia_sapling;
     public static Item mossy_dark_oak_sapling;
+
+    public static Item epidote_ore;
 }

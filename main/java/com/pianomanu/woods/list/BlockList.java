@@ -33,19 +33,21 @@ public class BlockList {
     public static SlabBlock mossy_jungle_slab = null;
     public static SlabBlock mossy_acacia_slab = null;
     public static SlabBlock mossy_dark_oak_slab = null;
-
+    //Fences
     public static FenceBlock mossy_oak_fence = null;
     public static FenceBlock mossy_birch_fence = null;
     public static FenceBlock mossy_spruce_fence = null;
     public static FenceBlock mossy_jungle_fence = null;
     public static FenceBlock mossy_acacia_fence = null;
     public static FenceBlock mossy_dark_oak_fence = null;
-
+    //Saplings
     public static WoodsSapling mossy_oak_sapling = null;
     public static WoodsSapling mossy_birch_sapling = null;
     public static WoodsSapling mossy_spruce_sapling = null;
     public static WoodsSapling mossy_jungle_sapling = null;
     public static WoodsSapling mossy_acacia_sapling = null;
     public static WoodsSapling mossy_dark_oak_sapling = null;
+
+    public static OreBlock epidote_ore = null;
 
 }

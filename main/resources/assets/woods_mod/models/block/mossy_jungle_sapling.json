@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "woods_mod:block/mossy_jungle_sapling"
+    }
+}

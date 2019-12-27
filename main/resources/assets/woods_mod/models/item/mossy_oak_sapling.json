@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "woods_mod:block/mossy_acacia_sapling"
+        "layer0": "woods_mod:block/mossy_oak_sapling"
     }
 }

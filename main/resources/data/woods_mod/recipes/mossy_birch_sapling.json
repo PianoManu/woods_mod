@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " x ",
+        "xax",
+        " x "
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item": "woods_mod:moss_item"
+        },
+        "a":
+        {
+            "item": "minecraft:birch_sapling"
+        }
+    },
+    "result":
+    {
+        "item": "woods_mod:mossy_birch_sapling",
+        "count": 1
+    }
+}

@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "woods_mod:mossy_oak_slabs",
-    "woods_mod:mossy_spruce_slabs",
-    "woods_mod:mossy_birch_slabs",
-    "woods_mod:mossy_jungle_slabs",
-    "woods_mod:mossy_acacia_slabs",
-    "woods_mod:mossy_dark_oak_slabs"
+    "woods_mod:mossy_oak_slab",
+    "woods_mod:mossy_spruce_slab",
+    "woods_mod:mossy_birch_slab",
+    "woods_mod:mossy_jungle_slab",
+    "woods_mod:mossy_acacia_slab",
+    "woods_mod:mossy_dark_oak_slab"
   ]
 }

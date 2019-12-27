@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "woods_mod:mossy_oak_fence",
+    "woods_mod:mossy_spruce_fence",
+    "woods_mod:mossy_birch_fence",
+    "woods_mod:mossy_jungle_fence",
+    "woods_mod:mossy_acacia_fence",
+    "woods_mod:mossy_dark_oak_fence"
+  ]
+}

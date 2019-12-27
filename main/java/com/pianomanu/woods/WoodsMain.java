@@ -12,6 +12,7 @@ import net.minecraft.block.trees.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.state.IStateHolder;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -58,6 +59,7 @@ public class WoodsMain {
 
                     ItemList.moss_item = new Item(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64)).setRegistryName(location("moss_item")),
                     ItemList.mossy_stick = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("mossy_stick")),
+                    ItemList.epidote_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("epidote_gem")),
 
 
 
@@ -101,7 +103,9 @@ public class WoodsMain {
                     ItemList.mossy_spruce_sapling = new BlockItem(BlockList.mossy_spruce_sapling, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("mossy_spruce_sapling")),
                     ItemList.mossy_jungle_sapling = new BlockItem(BlockList.mossy_jungle_sapling, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("mossy_jungle_sapling")),
                     ItemList.mossy_acacia_sapling = new BlockItem(BlockList.mossy_acacia_sapling, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("mossy_acacia_sapling")),
-                    ItemList.mossy_dark_oak_sapling = new BlockItem(BlockList.mossy_dark_oak_sapling, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("mossy_dark_oak_sapling"))
+                    ItemList.mossy_dark_oak_sapling = new BlockItem(BlockList.mossy_dark_oak_sapling, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("mossy_dark_oak_sapling")),
+
+                    ItemList.epidote_ore = new BlockItem(BlockList.epidote_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_ore"))
 
 
             );
@@ -150,10 +154,12 @@ public class WoodsMain {
 
                     BlockList.mossy_oak_sapling = (WoodsSapling) new WoodsSapling(new MossyOakTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_oak_sapling")),
                     BlockList.mossy_birch_sapling = (WoodsSapling) new WoodsSapling(new MossyBirchTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_birch_sapling")),
-                    BlockList.mossy_spruce_sapling = (WoodsSapling) new WoodsSapling(new SpruceTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_spruce_sapling")),
-                    BlockList.mossy_jungle_sapling = (WoodsSapling) new WoodsSapling(new JungleTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_jungle_sapling")),
-                    BlockList.mossy_acacia_sapling = (WoodsSapling) new WoodsSapling(new AcaciaTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_acacia_sapling")),
-                    BlockList.mossy_dark_oak_sapling = (WoodsSapling) new WoodsSapling(new DarkOakTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_dark_oak_sapling"))
+                    BlockList.mossy_spruce_sapling = (WoodsSapling) new WoodsSapling(new MossySpruceTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_spruce_sapling")),
+                    BlockList.mossy_jungle_sapling = (WoodsSapling) new WoodsSapling(new MossyJungleTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_jungle_sapling")),
+                    BlockList.mossy_acacia_sapling = (WoodsSapling) new WoodsSapling(new MossyAcaciaTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_acacia_sapling")),
+                    BlockList.mossy_dark_oak_sapling = (WoodsSapling) new WoodsSapling(new MossyDarkOakTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_dark_oak_sapling")),
+
+                    BlockList.epidote_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_ore"))
 
             );
             
