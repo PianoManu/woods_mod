@@ -1,6 +1,6 @@
 package com.pianomanu.woods.list;
 
-import com.pianomanu.woods.woods_blocks.*;
+import com.pianomanu.woods.block.*;
 import net.minecraft.block.*;
 
 public class BlockList {
@@ -47,7 +47,18 @@ public class BlockList {
     public static WoodsSapling mossy_jungle_sapling = null;
     public static WoodsSapling mossy_acacia_sapling = null;
     public static WoodsSapling mossy_dark_oak_sapling = null;
-
+    //environment blocks
     public static OreBlock epidote_ore = null;
+    public static OreBlock fire_opal_ore = null;
+
+    //natural blocks
+    public static Block mossy_dirt = null;
+
+    public static WoodsMossBlock moss = null;
+
+    //blocks with usage, craftable blocks
+    public static InventoryBlock wooden_box = null;
+    public static Block epidote_block = null;
+    public static Block fire_opal_block = null;
 
 }

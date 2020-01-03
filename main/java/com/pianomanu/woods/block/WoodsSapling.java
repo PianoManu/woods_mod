@@ -1,9 +1,8 @@
-package com.pianomanu.woods.woods_blocks;
+package com.pianomanu.woods.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.IGrowable;
-import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.trees.Tree;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
@@ -17,14 +16,14 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class WoodsSapling extends SaplingBlock implements IGrowable {
+public class WoodsSapling extends WoodsBushBlock implements IGrowable {
     public static final IntegerProperty STAGE = IntegerProperty.create("stage", 0, 1);
     protected static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
     protected static final VoxelShape SHAPE = Block.makeCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D);
     private final Tree tree;
 
     public WoodsSapling(Tree tree, Properties properties) {
-        super(tree, properties);
+        super(properties);
         this.tree = tree;
         this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
     }
@@ -59,7 +58,7 @@ public class WoodsSapling extends SaplingBlock implements IGrowable {
         this.grow(worldIn, pos, state, rand);
     }
 
-    @Override //actual growing-method
+    //actual growing-method
     public void grow(IWorld worldIn, BlockPos pos, BlockState state, Random rand) {
         if (state.get(STAGE) == 0) {
             worldIn.setBlockState(pos, state.cycle(STAGE), 4);

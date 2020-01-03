@@ -1,4 +1,4 @@
-package com.pianomanu.woods.woods_blocks.trees;
+package com.pianomanu.woods.block.trees;
 
 import java.util.Random;
 import javax.annotation.Nullable;

@@ -1,0 +1,48 @@
+Alpha versions
+======================
+
+					+	new content
+					-	removed old/broken/unused content
+					*	modified existing content
+					X	known bugs (not fixed, because I'm too stupid or the content will be removed or rewritten later on)
+					#	comments
+	Version 0.0.1
+	
+		+ Added 6 different vanilla-similar logtypes: "mossy ... log" (they drop their vanilla counterparts)
+		+ Added 6 different vanilla-similar planks: "mossy ... planks"
+		+ Added 6 different vanilla-similar stairs: "mossy ... stairs"
+		+ Added 6 different vanilla-similar slabs: "mossy ... slabs"
+		+ Added 6 different vanilla-similar fences: "mossy ... fences"
+		+ Added 6 trees containing the new mossy logs (they look similar to their vanilla counterparts and can be grown by planting saplings - see next point)
+		+ Added 6 saplings growing their trees
+		+ Added basic recipes concerning mentioned blocks(can be found - or should be found - in the vanilla recipe book)
+		+ Added 1 item "moss_item", which is one of the basic items of the mod; can be obtained by punching mossy logs (small chance)
+		+ Added 1 item "mossy_stick" (no recipe or usage for now, will behave like vanilla sticks in later versions, hopefully)
+		+ Added 1 item "epidote_gem", which is a crystal-like item, that drops when "epidote_ore" is broken without silk-touch (see next point)
+		+ Added 1 ore block "epidote_ore", which drops "epidote_gem", when broken without silk-touch - no in-world generation currently, (hopefully later)
+		+ Added basic loot tables for mentioned blocks
+		# If you find bugs, let me know
+		# Will ever anyone read this file...???	
+		
+	Version 0.0.2
+		
+		+ Added 1 block "mossy_dirt", which is similar to grass blocks
+		+ Added 1 block "moss", which is similar to snow, but generates like grass
+		+ Added 1 ore block "fire_opal_ore", which drops "fire_opal_gem", when broken without silk-touch
+		+ Added 3 items "pure_epidote_gem", "fire_opal_gem" and "pure_fire_opal_gem"
+		+ Added 2 decorative blocks "epidote_block" and "fire_opal_block" - no special use, except for decorative purposes
+		+ Added 1 biome "wet_forest_biome"
+			+ "fire_opal_ore" and "epidote_ore" are generated quite frequently
+			+ Mossy oak trees (huge and normal) and birch trees are generated instead of normal vanilla trees
+			+ "mossy_dirt" is generated near lakes
+			+ "moss" is generated frequently similar to grass
+		+ Added package "block" containing all still used files from "woods_blocks"
+		+ Added basic loot tables and basic recipes, mainly using a dataGenerator 
+		* Multiple parts of the file hierarchy have been revised
+			- "woods_blocks" package has been deleted and got replaced by "block" - all still used files were copied
+			- "ModStairs.java" is no longer used and got deleted
+			- "woods_blocks/WoodsSapling.java" was largely rewritten
+			* "WoodsMain.java" not longer contains all static RegistryEvent classes - each one got their own class inside the init-package
+		X Added an item container "wooden_box" - but it's completely buggy in the moment
+		# If you find bugs, let me know
+		

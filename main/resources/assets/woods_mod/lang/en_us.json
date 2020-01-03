@@ -2,6 +2,9 @@
 	"item.woods_mod.moss_item": "Moss",
 	"item.woods_mod.mossy_stick": "Mossy Stick",
 	"item.woods_mod.epidote_gem": "Epidote",
+	"item.woods_mod.pure_epidote_gem": "Pure Epidote",
+	"item.woods_mod.fire_opal_gem": "Fire Opal",
+	"item.woods_mod.pure_fire_opal_gem": "Pure Fire Opal",
 	
 
 	"block.woods_mod.mossy_oak_log": "Mossy Oak Log",
@@ -40,5 +43,15 @@
 	"block.woods_mod.mossy_jungle_sapling": "Mossy Jungle Sapling",
 	"block.woods_mod.mossy_acacia_sapling": "Mossy Acacia Sapling",
 	"block.woods_mod.mossy_dark_oak_sapling": "Mossy Dark Oak Sapling",
-	"block.woods_mod.epidote_ore": "Epidote Ore"
+	
+	"block.woods_mod.mossy_dirt": "Mossy Dirt",
+	"block.woods_mod.moss": "Moss",
+	
+	"block.woods_mod.epidote_ore": "Epidote Ore",
+	"block.woods_mod.epidote_block": "Epidote Block",
+	"block.woods_mod.fire_opal_ore": "Fire Opal Ore",
+	"block.woods_mod.fire_opal_block": "Fire Opal Block",
+	
+	
+	"biome.woods_mod.wet_forest_biome": "Wet Forest"
 }
