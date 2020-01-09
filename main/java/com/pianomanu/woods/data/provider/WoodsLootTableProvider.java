@@ -5,6 +5,7 @@ import java.nio.file.Path;
 import java.util.function.BiConsumer;
 
 import com.pianomanu.woods.list.BlockList;
+import com.pianomanu.woods.list.ItemList;
 import org.apache.logging.log4j.*;
 
 import com.google.gson.*;
@@ -51,6 +52,7 @@ public class WoodsLootTableProvider implements IDataProvider {
 
     protected void registerLootTables(BiConsumer<ResourceLocation, LootTable> consumer) {
         registerBlock(BlockList.wooden_box, addBasicBlockLootTable(BlockList.wooden_box), consumer);
+        registerBlock(BlockList.moss, addFortuneBlockLootTable(BlockList.moss, ItemList.moss_item), consumer);
     }
 
     private static void registerBlock(Block block, LootTable lootTable, BiConsumer<ResourceLocation, LootTable> consumer) {

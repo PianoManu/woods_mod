@@ -5,5 +5,6 @@ import net.minecraft.tileentity.TileEntityType;
 
 public class TileEntityList {
 
-    public static TileEntityType<InventoryBlockTileEntity> wooden_box_tile_entity = null;
+    //public static TileEntityType<InventoryBlockTileEntity> wooden_box_tile_entity = null;
+    public static TileEntityType<InventoryBlockTileEntity> wooden_box_tile_entity = TileEntityType.Builder.create(InventoryBlockTileEntity::new, BlockList.wooden_box).build(null);
 }

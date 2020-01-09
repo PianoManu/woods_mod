@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.lwjgl.system.CallbackI;
 
 public class WoodsItems {
 
@@ -32,6 +33,15 @@ public class WoodsItems {
                     ItemList.pure_epidote_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_epidote_gem")),
                     ItemList.fire_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("fire_opal_gem")),
                     ItemList.pure_fire_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_fire_opal_gem")),
+                    ItemList.heliodor_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("heliodor_gem")),
+                    ItemList.pure_heliodor_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_heliodor_gem")),
+                    ItemList.amethyst_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("amethyst_gem")),
+                    ItemList.pure_amethyst_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_amethyst_gem")),
+                    ItemList.azurite_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("azurite_gem")),
+                    ItemList.pure_azurite_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_azurite_gem")),
+                    ItemList.green_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("green_opal_gem")),
+                    ItemList.pure_green_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_green_opal_gem")),
+
 
 
                     //wood-like blocks
@@ -79,6 +89,10 @@ public class WoodsItems {
                     //other blocks
                     ItemList.epidote_ore = new BlockItem(BlockList.epidote_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_ore")),
                     ItemList.fire_opal_ore = new BlockItem(BlockList.fire_opal_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_ore")),
+                    ItemList.heliodor_ore = new BlockItem(BlockList.heliodor_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("heliodor_ore")),
+                    ItemList.amethyst_ore = new BlockItem(BlockList.amethyst_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("amethyst_ore")),
+                    ItemList.azurite_ore = new BlockItem(BlockList.azurite_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("azurite_ore")),
+                    ItemList.green_opal_ore = new BlockItem(BlockList.green_opal_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("green_opal_ore")),
 
                     ItemList.mossy_dirt = new BlockItem(BlockList.mossy_dirt, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("mossy_dirt")),
 
@@ -88,8 +102,14 @@ public class WoodsItems {
                     //blocks with usage
                     ItemList.wooden_box = new BlockItem(BlockList.wooden_box, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("wooden_box")),
 
+                    ItemList.small_forest_lantern = new BlockItem(BlockList.small_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("small_forest_lantern")),
+
                     ItemList.epidote_block = new BlockItem(BlockList.epidote_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_block")),
-                    ItemList.fire_opal_block = new BlockItem(BlockList.fire_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_block"))
+                    ItemList.fire_opal_block = new BlockItem(BlockList.fire_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_block")),
+                    ItemList.heliodor_block = new BlockItem(BlockList.heliodor_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("heliodor_block")),
+                    ItemList.amethyst_block = new BlockItem(BlockList.amethyst_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("amethyst_block")),
+                    ItemList.azurite_block = new BlockItem(BlockList.azurite_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("azurite_block")),
+                    ItemList.green_opal_block = new BlockItem(BlockList.green_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("green_opal_block"))
 
 
             );

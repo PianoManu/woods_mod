@@ -1,6 +1,7 @@
 package com.pianomanu.woods.block;
 
 import com.pianomanu.woods.init.WoodsTileEntityTypes;
+import com.pianomanu.woods.list.TileEntityList;
 import com.pianomanu.woods.tileentity.InventoryBlockTileEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -22,13 +23,14 @@ import java.util.stream.IntStream;
 public class InventoryBlock extends Block {
 
     //Thanks to HyCraftHD
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     public InventoryBlock() {
         super(Properties.create(Material.WOOD).hardnessAndResistance(3).harvestTool(ToolType.AXE).sound(SoundType.WOOD));
         setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult hit) {
         if (world.isRemote() || !(player instanceof ServerPlayerEntity)) {
@@ -60,7 +62,7 @@ public class InventoryBlock extends Block {
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        return getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
     }
 
     @Override
@@ -75,6 +77,6 @@ public class InventoryBlock extends Block {
 
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return WoodsTileEntityTypes.wooden_box.create();
+        return TileEntityList.wooden_box_tile_entity.create();
     }
 }

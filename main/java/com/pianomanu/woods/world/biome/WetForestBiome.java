@@ -1,5 +1,6 @@
 package com.pianomanu.woods.world.biome;
 
+import com.pianomanu.woods.block.WoodsForestLanterns;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -34,6 +35,8 @@ public class WetForestBiome extends WoodsBiome {
         WoodsDefaultBiomeFeatures.addVanillaAndWoodsOres(this);
         WoodsDefaultBiomeFeatures.addMossSedimentDisks(this);
         WoodsDefaultBiomeFeatures.addMossVegetation(this);
+        //WoodsDefaultBiomeFeatures.addGrassSlabs(this);
+        WoodsDefaultBiomeFeatures.addForestLanterns(this);
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

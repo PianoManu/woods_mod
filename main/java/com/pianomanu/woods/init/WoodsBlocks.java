@@ -7,14 +7,20 @@ import com.pianomanu.woods.block.trees.*;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import static com.pianomanu.woods.list.BlockList.INVENTORY_BLOCK;
 
 public class WoodsBlocks {
 
@@ -73,6 +79,10 @@ public class WoodsBlocks {
                     //oreblocks
                     BlockList.epidote_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_ore")),
                     BlockList.fire_opal_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("fire_opal_ore")),
+                    BlockList.heliodor_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("heliodor_ore")),
+                    BlockList.amethyst_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("amethyst_ore")),
+                    BlockList.azurite_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("azurite_ore")),
+                    BlockList.green_opal_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_ore")),
 
                     //wet forest environment blocks
                     BlockList.mossy_dirt = new GrassBlock(Block.Properties.create(Material.ORGANIC, MaterialColor.DIRT).tickRandomly().hardnessAndResistance(0.6F).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("mossy_dirt")),
@@ -83,8 +93,14 @@ public class WoodsBlocks {
                     //blocks with usage
                     BlockList.wooden_box = (InventoryBlock) new InventoryBlock().setRegistryName(location("wooden_box")),
 
+                    BlockList.small_forest_lantern = (WoodsForestLanterns) new WoodsForestLanterns(Block.Properties.create(Material.WOOD).hardnessAndResistance(0.0F).lightValue(4).sound(SoundType.WOOD)).setRegistryName(location("small_forest_lantern")),
+
                     BlockList.epidote_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_block")),
-                    BlockList.fire_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("fire_opal_block"))
+                    BlockList.fire_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("fire_opal_block")),
+                    BlockList.heliodor_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("heliodor_block")),
+                    BlockList.amethyst_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("amethyst_block")),
+                    BlockList.azurite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("azurite_block")),
+                    BlockList.green_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_block"))
 
 
             );

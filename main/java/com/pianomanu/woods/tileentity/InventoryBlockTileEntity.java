@@ -2,22 +2,27 @@ package com.pianomanu.woods.tileentity;
 
 import com.pianomanu.woods.container.InventoryBlockContainer;
 import com.pianomanu.woods.init.WoodsTileEntityTypes;
-import net.minecraft.entity.player.*;
-import net.minecraft.inventory.container.*;
+import com.pianomanu.woods.list.TileEntityList;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
-import net.minecraft.util.text.*;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.*;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
 
 public class InventoryBlockTileEntity extends TileEntity implements INamedContainerProvider {
 
     private final LazyOptional<ItemStackHandler> inventory = LazyOptional.of(() -> new ItemStackHandler(54));
 
     public InventoryBlockTileEntity() {
-        super(WoodsTileEntityTypes.wooden_box);
+        super(TileEntityList.wooden_box_tile_entity);
     }
 
     @Override

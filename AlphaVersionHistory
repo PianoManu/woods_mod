@@ -6,7 +6,7 @@ Alpha versions
 					*	modified existing content
 					X	known bugs (not fixed, because I'm too stupid or the content will be removed or rewritten later on)
 					#	comments
-	Version 0.0.1
+	Version 0.0.1 --- 27.12.2019
 	
 		+ Added 6 different vanilla-similar logtypes: "mossy ... log" (they drop their vanilla counterparts)
 		+ Added 6 different vanilla-similar planks: "mossy ... planks"
@@ -24,7 +24,7 @@ Alpha versions
 		# If you find bugs, let me know
 		# Will ever anyone read this file...???	
 		
-	Version 0.0.2
+	Version 0.0.2 --- 03.01.2020
 		
 		+ Added 1 block "mossy_dirt", which is similar to grass blocks
 		+ Added 1 block "moss", which is similar to snow, but generates like grass
@@ -46,3 +46,13 @@ Alpha versions
 		X Added an item container "wooden_box" - but it's completely buggy in the moment
 		# If you find bugs, let me know
 		
+	Version 0.0.3 --- 09.01.2020
+		
+		+ Added 4 gem items "amethyst_gem", "azurite_gem", "green_opal_gem" and "heliodor_gem"
+		+ Added 4 gem items "pure_amethyst_gem", "pure_azurite_gem", "pure_green_opal_gem" and "pure_heliodor_gem", which are the better versions of the normal gems
+		+ Added 4 ore blocks "amethyst_ore", "azurite_ore", "green_opal_ore" and "heliodor_ore"
+		+ Added 4 blocks "amethyst_block", "azurite_block", "green_opal_block" and "heliodor_block"
+		+ Added 1 light-emitting block "small_forest_lantern" with a light level of 3, rarely generates in Wet Forest biome (may change later)
+		+ Added lots of recipes (can be found in the ingame recipe book) and lootTables ...
+		* Fixed wooden_box bugs - THANKS to HyCraftHD for help
+		# If you find bugs, let me know

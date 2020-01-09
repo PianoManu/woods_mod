@@ -17,7 +17,6 @@ public abstract class TileEntityContainer<T extends TileEntity> extends Containe
     // Client
     public TileEntityContainer(ContainerType<?> type, int id, PlayerInventory playerInventory, PacketBuffer buffer) {
         this(type, id, playerInventory, getClientTileEntity(buffer));
-        init();
     }
 
     // Server
@@ -39,7 +38,7 @@ public abstract class TileEntityContainer<T extends TileEntity> extends Containe
     private static <X extends TileEntity> X getClientTileEntity(PacketBuffer buffer) {
         final TileEntity tileEntity = Minecraft.getInstance().world.getTileEntity(buffer.readBlockPos());
         if (tileEntity == null) {
-            throw new IllegalStateException("The client tile entity muste be present");
+            throw new IllegalStateException("The client tile entity must be present");
         }
         return (X) tileEntity;
     }

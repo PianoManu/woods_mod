@@ -5,6 +5,14 @@
 	"item.woods_mod.pure_epidote_gem": "Pure Epidote",
 	"item.woods_mod.fire_opal_gem": "Fire Opal",
 	"item.woods_mod.pure_fire_opal_gem": "Pure Fire Opal",
+	"item.woods_mod.heliodor_gem": "Heliodor",
+	"item.woods_mod.amethyst_gem": "Amethyst",
+	"item.woods_mod.azurite_gem": "Azurite",
+	"item.woods_mod.green_opal_gem": "Green Opal",
+	"item.woods_mod.pure_heliodor_gem": "Pure Heliodor",
+	"item.woods_mod.pure_amethyst_gem": "Pure Amethyst",
+	"item.woods_mod.pure_azurite_gem": "Pure Azurite",
+	"item.woods_mod.pure_green_opal_gem": "Pure Green Opal",
 	
 
 	"block.woods_mod.mossy_oak_log": "Mossy Oak Log",
@@ -51,6 +59,21 @@
 	"block.woods_mod.epidote_block": "Epidote Block",
 	"block.woods_mod.fire_opal_ore": "Fire Opal Ore",
 	"block.woods_mod.fire_opal_block": "Fire Opal Block",
+	"block.woods_mod.heliodor_ore": "Heliodor Ore",
+	"block.woods_mod.amethyst_ore": "Amethyst Ore",
+	"block.woods_mod.azurite_ore": "Azurite Ore",
+	"block.woods_mod.green_opal_ore": "Green Opal Ore",
+	"block.woods_mod.heliodor_block": "Heliodor Block",
+	"block.woods_mod.amethyst_block": "Amethyst Block",
+	"block.woods_mod.azurite_block": "Azurite Block",
+	"block.woods_mod.green_opal_block": "Green Opal Block",
+	
+	"block.woods_mod.wooden_box": "Wooden Box",
+	
+	"block.woods_mod.small_forest_lantern": "Small Forest Lantern",
+	
+	
+	"container.woods_mod.wooden_box": "Wooden Box",
 	
 	
 	"biome.woods_mod.wet_forest_biome": "Wet Forest"

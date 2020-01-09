@@ -2,14 +2,23 @@ package com.pianomanu.woods.data.provider;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.minecraft.advancements.criterion.EnchantmentPredicate;
+import net.minecraft.advancements.criterion.ItemPredicate;
+import net.minecraft.advancements.criterion.MinMaxBounds;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DirectoryCache;
 import net.minecraft.data.IDataProvider;
 import net.minecraft.data.LootTableProvider;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Item;
+import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.*;
+import net.minecraft.world.storage.loot.conditions.MatchTool;
+import net.minecraft.world.storage.loot.functions.ApplyBonus;
 import net.minecraft.world.storage.loot.functions.CopyNbt;
+import net.minecraft.world.storage.loot.functions.ExplosionDecay;
 import net.minecraft.world.storage.loot.functions.SetContents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -50,6 +59,35 @@ public abstract class WoodsBaseLootTableProvider extends LootTableProvider {
                                 .func_216075_a(DynamicLootEntry.func_216162_a(new ResourceLocation("minecraft", "contents"))))
                 );
         return LootTable.builder().addLootPool(builder);
+    }
+
+    protected LootTable.Builder createBlockToItemLootTable(String name, Item item) {
+        LootPool.Builder builder = LootPool.builder()
+                .name(name)
+                .rolls(ConstantRange.of(1))
+                .addEntry(ItemLootEntry.builder(item)
+                        //.acceptFunction(CopyName.builder(CopyName.Source.BLOCK_ENTITY)) //protected
+                        .acceptFunction(CopyNbt.func_215881_a(CopyNbt.Source.BLOCK_ENTITY)
+                                .func_216055_a("inv", "BlockEntityTag.inv", CopyNbt.Action.REPLACE)
+                                .func_216055_a("energy", "BlockEntityTag.energy", CopyNbt.Action.REPLACE))
+                        .acceptFunction(SetContents.func_215920_b()
+                                .func_216075_a(DynamicLootEntry.func_216162_a(new ResourceLocation("minecraft", "contents"))))
+                );
+        return LootTable.builder().addLootPool(builder);
+    }
+
+    protected static LootTable createFortuneBlockLootTable(Block block, IItemProvider itemProvider) {
+        return LootTable.builder() //
+                .setParameterSet(LootParameterSets.BLOCK) //
+                .addLootPool(LootPool.builder() //
+                        .rolls(ConstantRange.of(1)) //
+                        .addEntry(ItemLootEntry.builder(block) //
+                                .acceptCondition(MatchTool.builder(ItemPredicate.Builder.create() //
+                                        .enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.IntBound.atLeast(1)))) //
+                                ).func_216080_a(ItemLootEntry.builder(itemProvider) //
+                                        .acceptFunction(ApplyBonus.func_215869_a(Enchantments.FORTUNE)) //
+                                        .acceptFunction(ExplosionDecay.func_215863_b()))))
+                .build();
     }
 
     @Override

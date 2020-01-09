@@ -50,6 +50,13 @@ public class BlockList {
     //environment blocks
     public static OreBlock epidote_ore = null;
     public static OreBlock fire_opal_ore = null;
+    public static OreBlock heliodor_ore = null;
+    public static OreBlock amethyst_ore = null;
+    public static OreBlock azurite_ore = null;
+    public static OreBlock rhodochrosite_ore = null;
+    public static OreBlock rose_quarz_ore = null;
+    public static OreBlock green_opal_ore = null;
+
 
     //natural blocks
     public static Block mossy_dirt = null;
@@ -57,8 +64,20 @@ public class BlockList {
     public static WoodsMossBlock moss = null;
 
     //blocks with usage, craftable blocks
-    public static InventoryBlock wooden_box = null;
+    public static InventoryBlock wooden_box = new InventoryBlock();
+
+    public static WoodsForestLanterns small_forest_lantern = null;
+
     public static Block epidote_block = null;
     public static Block fire_opal_block = null;
+    public static Block heliodor_block = null;
+    public static Block amethyst_block = null;
+    public static Block azurite_block = null;
+    public static Block rhodochrosite_block = null;
+    public static Block rose_quarz_block = null;
+    public static Block green_opal_block = null;
+
+    //for tests only
+    public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();
 
 }

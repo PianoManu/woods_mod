@@ -1,0 +1,32 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "woods_mod:block/small_forest_lantern"
+    },
+    "elements": [
+        {   "from": [ 4, 0, 4 ],
+            "to": [ 12, 8, 12 ],
+            "shade": false,
+            "faces": {
+                "down": { "uv": [ 7, 13, 9, 15 ], "texture": "woods_mod:block/small_forest_lantern" },
+                "up":   { "uv": [ 7,  6, 9,  8 ], "texture": "woods_mod:block/small_forest_lantern" }
+            }
+        },
+        {   "from": [ 4, 0, 4 ],
+            "to": [ 12, 8, 12 ],
+            "shade": false,
+            "faces": {
+                "west": { "uv": [ 4, 0, 12, 8 ], "texture": "woods_mod:block/small_forest_lantern" },
+                "east": { "uv": [ 4, 0, 12, 8 ], "texture": "woods_mod:block/small_forest_lantern" }
+            }
+        },
+        {   "from": [ 4, 0, 4 ],
+            "to": [ 12, 8, 12 ],
+            "shade": false,
+            "faces": {
+                "north": { "uv": [ 4, 0, 12, 8 ], "texture": "woods_mod:block/small_forest_lantern" },
+                "south": { "uv": [ 4, 0, 12, 8 ], "texture": "woods_mod:block/small_forest_lantern" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woods_mod:pure_azurite_gem"
+    ]
+  },
+  "criteria": {
+    "has_azurite_gems": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "woods_mod:azurite_gem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woods_mod:pure_azurite_gem"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_azurite_gems",
+      "has_the_recipe"
+    ]
+  ]
+}
