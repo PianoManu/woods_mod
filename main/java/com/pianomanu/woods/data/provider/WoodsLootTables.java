@@ -56,6 +56,8 @@ public class WoodsLootTables extends WoodsBaseLootTableProvider {
         lootTables.put(BlockList.mossy_acacia_fence, createStandardTable("mossy_acacia_fence", BlockList.mossy_acacia_fence));
         lootTables.put(BlockList.mossy_dark_oak_fence, createStandardTable("mossy_dark_oak_fence", BlockList.mossy_dark_oak_log));
 
+        lootTables.put(BlockList.dirt_slab, createStandardTable("dirt_slab", BlockList.dirt_slab));
+        lootTables.put(BlockList.dirt_stairs, createStandardTable("dirt_stairs", BlockList.dirt_stairs));
 
         lootTables.put(BlockList.mossy_dirt, createStandardTable("mossy_dirt", BlockList.mossy_dirt));
 

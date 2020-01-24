@@ -46,6 +46,9 @@ public class ItemList {
     public static Item mossy_jungle_slab;
     public static Item mossy_acacia_slab;
     public static Item mossy_dark_oak_slab;
+    public static Item grass_slab;
+    public static Item dirt_slab;
+    public static Item test_grass;
 
     public static Item mossy_oak_stairs;
     public static Item mossy_birch_stairs;
@@ -53,6 +56,8 @@ public class ItemList {
     public static Item mossy_jungle_stairs;
     public static Item mossy_acacia_stairs;
     public static Item mossy_dark_oak_stairs;
+    public static Item grass_stairs;
+    public static Item dirt_stairs;
 
     public static Item mossy_oak_fence;
     public static Item mossy_birch_fence;
@@ -83,6 +88,8 @@ public class ItemList {
     public static Item wooden_box;
 
     public static Item small_forest_lantern;
+    public static Item medium_forest_lantern;
+    public static Item large_forest_lantern;
 
     public static Item epidote_block;
     public static Item fire_opal_block;

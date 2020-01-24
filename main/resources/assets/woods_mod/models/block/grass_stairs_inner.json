@@ -1,0 +1,9 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "woods_mod:block/dirt",
+        "top": "woods_mod:block/grass_block",
+        "side": "woods_mod:block/grass_block_side",
+		"overlay": "woods_mod:block/grass_block_side_overlay"
+    }
+}

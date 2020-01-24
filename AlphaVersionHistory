@@ -56,3 +56,9 @@ Alpha versions
 		+ Added lots of recipes (can be found in the ingame recipe book) and lootTables ...
 		* Fixed wooden_box bugs - THANKS to HyCraftHD for help
 		# If you find bugs, let me know
+		
+	Version 0.0.4 --- 24.01.2020
+		+ Added grass slabs, dirt slabs, grass stairs, dirt stairs
+		+ Grass slabs are now generated in Wet Forest biome to smooth the terrain
+		X Grass slabs cannot be placed on top of each other to make a grass block, because I had problems with the models
+		X Grass stairs have weird side textures, will be fixed later

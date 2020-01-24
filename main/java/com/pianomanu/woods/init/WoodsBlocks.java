@@ -76,6 +76,15 @@ public class WoodsBlocks {
                     BlockList.mossy_acacia_sapling = (WoodsSapling) new WoodsSapling(new MossyAcaciaTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_acacia_sapling")),
                     BlockList.mossy_dark_oak_sapling = (WoodsSapling) new WoodsSapling(new MossyDarkOakTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("mossy_dark_oak_sapling")),
 
+                    //other slabs
+                    BlockList.grass_slab = (WoodsSlabNoDouble) new WoodsSlabNoDouble(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.6f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("grass_slab")),
+                    BlockList.dirt_slab = (SlabBlock) new SlabBlock(Block.Properties.create(Material.EARTH).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("dirt_slab")),
+                    BlockList.test_grass = (GrassBlock) new GrassBlock(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.6F).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND).tickRandomly()).setRegistryName(location("test_grass")),
+
+                    //other stairs
+                    BlockList.grass_stairs = (StairsBlock) new WoodsStairs(Blocks.GRASS_BLOCK.getDefaultState(), Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.6f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("grass_stairs")),
+                    BlockList.dirt_stairs = (StairsBlock) new WoodsStairs(Blocks.DIRT.getDefaultState(), Block.Properties.create(Material.EARTH).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("dirt_stairs")),
+
                     //oreblocks
                     BlockList.epidote_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_ore")),
                     BlockList.fire_opal_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("fire_opal_ore")),
@@ -94,6 +103,8 @@ public class WoodsBlocks {
                     BlockList.wooden_box = (InventoryBlock) new InventoryBlock().setRegistryName(location("wooden_box")),
 
                     BlockList.small_forest_lantern = (WoodsForestLanterns) new WoodsForestLanterns(Block.Properties.create(Material.WOOD).hardnessAndResistance(0.0F).lightValue(4).sound(SoundType.WOOD)).setRegistryName(location("small_forest_lantern")),
+                    BlockList.medium_forest_lantern = (WoodsForestLanternsTest) new WoodsForestLanternsTest(Block.Properties.create(Material.WOOD).hardnessAndResistance(0.0F).lightValue(8).sound(SoundType.WOOD)).setRegistryName(location("medium_forest_lantern")),
+                    BlockList.large_forest_lantern = (WoodsForestLanternsTest) new WoodsForestLanternsTest(Block.Properties.create(Material.WOOD).hardnessAndResistance(0.0F).lightValue(20).sound(SoundType.WOOD)).setRegistryName(location("large_forest_lantern")),
 
                     BlockList.epidote_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_block")),
                     BlockList.fire_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("fire_opal_block")),

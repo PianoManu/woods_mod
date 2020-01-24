@@ -23,8 +23,9 @@ public class WetForestBiome extends WoodsBiome {
         DefaultBiomeFeatures.addCarvers(this);
         DefaultBiomeFeatures.addStructures(this);
         DefaultBiomeFeatures.addMonsterRooms(this);
-        DefaultBiomeFeatures.addDoubleFlowers(this);
         DefaultBiomeFeatures.addStoneVariants(this);
+        WoodsDefaultBiomeFeatures.addSlabs(this);
+        DefaultBiomeFeatures.addDoubleFlowers(this);
         DefaultBiomeFeatures.addDefaultFlowers(this);
         DefaultBiomeFeatures.addGrass(this);
         DefaultBiomeFeatures.addMushrooms(this);

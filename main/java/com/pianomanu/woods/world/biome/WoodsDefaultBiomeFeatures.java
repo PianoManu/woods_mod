@@ -3,6 +3,7 @@ package com.pianomanu.woods.world.biome;
 import com.google.common.collect.Lists;
 import com.pianomanu.woods.WoodsMain;
 import com.pianomanu.woods.list.BlockList;
+import com.pianomanu.woods.world.gen.SlabsInWorldGen;
 import com.pianomanu.woods.world.gen.feature.*;
 import com.pianomanu.woods.world.gen.feature.LakesFeature;
 import net.minecraft.block.Blocks;
@@ -31,6 +32,10 @@ public class WoodsDefaultBiomeFeatures {
         biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.amethyst_ore.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(10, 0, 0,64)));
         biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.azurite_ore.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(10, 0, 0,64)));
         biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockList.green_opal_ore.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(10, 0, 0,64)));
+    }
+
+    public static void addSlabs(Biome biomeIn) {
+        biomeIn.addFeature(GenerationStage.Decoration.TOP_LAYER_MODIFICATION, Biome.createDecoratedFeature(new SlabsInWorldGen(NoFeatureConfig::deserialize), IFeatureConfig.NO_FEATURE_CONFIG, Placement.NOPE, IPlacementConfig.NO_PLACEMENT_CONFIG));
     }
 
     public static void addMossyForestTrees(Biome biomeIn) {

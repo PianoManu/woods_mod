@@ -26,6 +26,9 @@ public class BlockList {
     public static StairsBlock mossy_jungle_stairs = null;
     public static StairsBlock mossy_acacia_stairs = null;
     public static StairsBlock mossy_dark_oak_stairs = null;
+
+    public static StairsBlock grass_stairs = null;
+    public static StairsBlock dirt_stairs = null;
     //Slabs
     public static SlabBlock mossy_oak_slab = null;
     public static SlabBlock mossy_birch_slab = null;
@@ -33,6 +36,10 @@ public class BlockList {
     public static SlabBlock mossy_jungle_slab = null;
     public static SlabBlock mossy_acacia_slab = null;
     public static SlabBlock mossy_dark_oak_slab = null;
+
+    public static WoodsSlabNoDouble grass_slab = null;
+    public static SlabBlock dirt_slab = null;
+    public static GrassBlock test_grass = null;
     //Fences
     public static FenceBlock mossy_oak_fence = null;
     public static FenceBlock mossy_birch_fence = null;
@@ -67,6 +74,8 @@ public class BlockList {
     public static InventoryBlock wooden_box = new InventoryBlock();
 
     public static WoodsForestLanterns small_forest_lantern = null;
+    public static WoodsForestLanternsTest medium_forest_lantern = null;
+    public static WoodsForestLanternsTest large_forest_lantern = null;
 
     public static Block epidote_block = null;
     public static Block fire_opal_block = null;
