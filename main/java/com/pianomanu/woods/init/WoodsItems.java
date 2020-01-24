@@ -92,7 +92,6 @@ public class WoodsItems {
                     ItemList.dirt_slab = new BlockItem(BlockList.dirt_slab, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("dirt_slab")),
                     ItemList.grass_stairs = new BlockItem(BlockList.grass_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("grass_stairs")),
                     ItemList.dirt_stairs = new BlockItem(BlockList.dirt_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("dirt_stairs")),
-                    ItemList.test_grass = new BlockItem(BlockList.test_grass, new Item.Properties()).setRegistryName(location("test_grass")),
 
                     //other blocks
                     ItemList.epidote_ore = new BlockItem(BlockList.epidote_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_ore")),
@@ -111,8 +110,9 @@ public class WoodsItems {
                     ItemList.wooden_box = new BlockItem(BlockList.wooden_box, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("wooden_box")),
 
                     ItemList.small_forest_lantern = new BlockItem(BlockList.small_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("small_forest_lantern")),
-                    ItemList.medium_forest_lantern = new BlockItem(BlockList.medium_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("medium_forest_lantern")),
-                    ItemList.large_forest_lantern = new BlockItem(BlockList.large_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("large_forest_lantern")),
+                    //currently buggy
+                    //ItemList.medium_forest_lantern = new BlockItem(BlockList.medium_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("medium_forest_lantern")),
+                    //ItemList.large_forest_lantern = new BlockItem(BlockList.large_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("large_forest_lantern")),
 
                     ItemList.epidote_block = new BlockItem(BlockList.epidote_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_block")),
                     ItemList.fire_opal_block = new BlockItem(BlockList.fire_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_block")),

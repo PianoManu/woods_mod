@@ -1,14 +1,10 @@
 package com.pianomanu.woods.world.gen;
 
 import com.mojang.datafixers.Dynamic;
-import com.pianomanu.woods.init.WoodsBlockStateProperties;
 import com.pianomanu.woods.list.BlockList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowyDirtBlock;
-import net.minecraft.state.BooleanProperty;
-import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorld;

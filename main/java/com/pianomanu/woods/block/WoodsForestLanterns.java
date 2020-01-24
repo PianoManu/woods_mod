@@ -1,6 +1,5 @@
 package com.pianomanu.woods.block;
 
-import com.pianomanu.woods.util.VoxelShapeHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.ParticleTypes;

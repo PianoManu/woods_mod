@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woods_mod:mossy_stick"
+    ]
+  },
+  "criteria": {
+    "has_mossy_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:mossy_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woods_mod:mossy_stick"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mossy_planks",
+      "has_the_recipe"
+    ]
+  ]
+}
