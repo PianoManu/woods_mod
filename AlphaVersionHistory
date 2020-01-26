@@ -62,3 +62,23 @@ Alpha versions
 		+ Grass slabs are now generated in Wet Forest biome to smooth the terrain
 		X Grass slabs cannot be placed on top of each other to make a grass block, because I had problems with the models
 		X Grass stairs have weird side textures, will be fixed later
+		# If you find bugs, let me know
+	====================================================
+		Release 0.1.0 --- 24.01.2020 - Version 0.0.4
+		Test Release
+	====================================================
+	
+	Version 0.0.5 --- 26.01.2020
+		+ Added medium_forest_lantern and large_forest_lantern, emitting 8 and 15 light level
+		+ Added some drops and recipes
+		+ Wet Forest biome is now generated in the normal Default-world type
+		+ Woods ores are now generated in every biome
+		+ Grass slabs are now generated in every biome containing grass, but this feature is still buggy
+		* Moss is now rendered translucent
+		* Grass Slabs now can be placed on top of each other, but double slab is still buggy (e.g. does not change to dirt, if any other solid block is built above, because they only have the model of the grass block)
+		* Fixed textures of grass slab and grass stairs, also they got the grass overlay
+		* Changed the model of all three forest lanterns, they're pretty fancy now (at least that's what I think :D )
+		* Grass stairs now have a better model
+		* Grass slabs and grass stairs now have in every biome the same texture as grass blocks
+		X Grass stairs placed upside-down look weird, maybe I'll fix it later, if I get how to manage this
+		# If you find bugs, let me know

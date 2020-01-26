@@ -28,6 +28,13 @@ public class WoodsForestLanterns extends Block {
         return SHAPE;
     }
 
+    @SuppressWarnings("deprecation")
+    @Override
+    public VoxelShape getRenderShape(BlockState state, IBlockReader reader, BlockPos pos)
+    {
+        return SHAPE;
+    }
+
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }

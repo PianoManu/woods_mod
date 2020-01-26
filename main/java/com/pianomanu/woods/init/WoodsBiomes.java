@@ -1,6 +1,7 @@
 package com.pianomanu.woods.init;
 
 import com.pianomanu.woods.WoodsMain;
+import com.pianomanu.woods.list.BiomesList;
 import com.pianomanu.woods.world.biome.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
@@ -23,10 +24,10 @@ public class WoodsBiomes {
         public static void registerBiomes(final RegistryEvent.Register<Biome> event) {
 
             event.getRegistry().registerAll(
-                    Biomes.WET_FOREST_BIOME = new WetForestBiome().setRegistryName(location("wet_forest_biome"))
+                    BiomesList.WET_FOREST_BIOME = new WetForestBiome().setRegistryName(location("wet_forest_biome"))
             );
 
-            Biomes.registerBiomes();
+            com.pianomanu.woods.world.biome.WoodsBiomes.registerBiomes();
 
             logger.info("Registered all biomes from woods_mod.");
 

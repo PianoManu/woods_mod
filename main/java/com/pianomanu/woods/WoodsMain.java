@@ -2,6 +2,10 @@ package com.pianomanu.woods;
 
 import com.pianomanu.woods.block.*;
 //import com.pianomanu.woods.world.WetForestWorldType;
+import com.pianomanu.woods.init.WoodsBlocks;
+import com.pianomanu.woods.world.WoodsWorldType;
+import com.pianomanu.woods.world.gen.WoodsFeaturesInVanillaBiomes;
+import net.minecraft.world.WorldType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -18,8 +22,7 @@ public class WoodsMain {
     public static final String MOD_ID = "woods_mod";
     private static final Logger logger = LogManager.getLogger(MOD_ID);
 
-    //public static final WorldType WET_FOREST_TYPE = new WetForestWorldType();
-
+    //public static final WorldType WOODS_WORLD_TYPE = new WoodsWorldType(); //TODO Fix Worldtype
     public WoodsMain() {
         instance = this;
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -31,6 +34,7 @@ public class WoodsMain {
         logger.info("Setup method for woods_mod registered");
     }
     private void clientRegistries(final FMLClientSetupEvent event) {
+        WoodsFeaturesInVanillaBiomes.setup();
         logger.info("ClientRegistries method for woods_mod registered");
     }
 }

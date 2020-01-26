@@ -3,7 +3,7 @@ package com.pianomanu.woods.world.biome;
 import com.google.common.collect.Lists;
 import com.pianomanu.woods.WoodsMain;
 import com.pianomanu.woods.list.BlockList;
-import com.pianomanu.woods.world.gen.SlabsInWorldGen;
+import com.pianomanu.woods.world.gen.feature.SlabsInWorldGen;
 import com.pianomanu.woods.world.gen.feature.*;
 import com.pianomanu.woods.world.gen.feature.LakesFeature;
 import net.minecraft.block.Blocks;

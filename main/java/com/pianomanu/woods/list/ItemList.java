@@ -48,7 +48,6 @@ public class ItemList {
     public static Item mossy_dark_oak_slab;
     public static Item grass_slab;
     public static Item dirt_slab;
-    public static Item test_grass;
 
     public static Item mossy_oak_stairs;
     public static Item mossy_birch_stairs;

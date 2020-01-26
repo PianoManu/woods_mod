@@ -1,6 +1,6 @@
 {
     "parent": "woods_mod:block/template_small_forest_lantern",
     "textures": {
-        "torch": "woods_mod:block/medium_forest_lantern"
+        "torch": "woods_mod:block/large_forest_lantern"
     }
 }

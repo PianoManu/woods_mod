@@ -38,6 +38,9 @@ public class WoodsRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shapedRecipe(ItemList.azurite_block, 1). key('#', ItemList.pure_azurite_gem).patternLine("###").patternLine("###").patternLine("###").addCriterion("has_pure_azurite_gem", this.hasItem(ItemList.pure_azurite_gem)).build(consumer);
 
         ShapedRecipeBuilder.shapedRecipe(ItemList.mossy_stick, 4). key('#', WoodsItemTags.MOSSY_PLANKS).patternLine("#").patternLine("#").addCriterion("has_mossy_planks", this.hasItem(WoodsItemTags.MOSSY_PLANKS)).build(consumer);
+        ShapedRecipeBuilder.shapedRecipe(ItemList.small_forest_lantern, 4).key('#', ItemList.moss_item).key('+', Items.STICK).patternLine("#").patternLine("+").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
+        ShapedRecipeBuilder.shapedRecipe(ItemList.medium_forest_lantern, 4).key('#', ItemList.moss_item).key('+', ItemList.small_forest_lantern).patternLine("#+#").patternLine("+#+").patternLine("#+#").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
+        ShapedRecipeBuilder.shapedRecipe(ItemList.large_forest_lantern, 4).key('#', ItemList.moss_item).key('+', ItemList.medium_forest_lantern).patternLine("#+#").patternLine("+++").patternLine("#+#").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
     }
 
 }

@@ -22,6 +22,13 @@
                       }
                     ]
                   }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "bottom"
+                  }
                 }
               ],
               "name": "woods_mod:grass_slab"
@@ -30,10 +37,102 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "bottom"
+                  }
                 }
               ],
               "name": "woods_mod:dirt_slab"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "top"
+                  }
+                }
+              ],
+              "name": "woods_mod:grass_slab"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "top"
+                  }
+                }
+              ],
+              "name": "woods_mod:dirt_slab"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "name": "minecraft:grass_block"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "woods_mod:grass_slab",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "name": "minecraft:dirt"
             }
           ]
         }

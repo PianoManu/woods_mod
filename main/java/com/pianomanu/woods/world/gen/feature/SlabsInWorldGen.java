@@ -1,4 +1,4 @@
-package com.pianomanu.woods.world.gen;
+package com.pianomanu.woods.world.gen.feature;
 
 import com.mojang.datafixers.Dynamic;
 import com.pianomanu.woods.list.BlockList;

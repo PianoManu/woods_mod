@@ -76,6 +76,8 @@ public class WoodsLootTables extends WoodsBaseLootTableProvider {
 
 
         lootTables.put(BlockList.small_forest_lantern, createStandardTable("small_forest_lantern", BlockList.small_forest_lantern));
+        lootTables.put(BlockList.medium_forest_lantern, createStandardTable("medium_forest_lantern", BlockList.medium_forest_lantern));
+        lootTables.put(BlockList.large_forest_lantern, createStandardTable("large_forest_lantern", BlockList.large_forest_lantern));
 
         //lootTables.put(BlockList.wooden_box, createStandardTable("wooden_box", BlockList.wooden_box));
 

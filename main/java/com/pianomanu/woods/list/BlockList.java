@@ -1,6 +1,7 @@
 package com.pianomanu.woods.list;
 
 import com.pianomanu.woods.block.*;
+import com.pianomanu.woods.init.WoodsGrassBlock;
 import net.minecraft.block.*;
 
 public class BlockList {
@@ -27,7 +28,7 @@ public class BlockList {
     public static StairsBlock mossy_acacia_stairs = null;
     public static StairsBlock mossy_dark_oak_stairs = null;
 
-    public static StairsBlock grass_stairs = null;
+    public static WoodsStairsCutoutMipped grass_stairs = null;
     public static StairsBlock dirt_stairs = null;
     //Slabs
     public static SlabBlock mossy_oak_slab = null;
@@ -39,7 +40,6 @@ public class BlockList {
 
     public static WoodsSlabNoDouble grass_slab = null;
     public static SlabBlock dirt_slab = null;
-    public static GrassBlock test_grass = null;
     //Fences
     public static FenceBlock mossy_oak_fence = null;
     public static FenceBlock mossy_birch_fence = null;
@@ -73,7 +73,7 @@ public class BlockList {
     //blocks with usage, craftable blocks
     public static InventoryBlock wooden_box = new InventoryBlock();
 
-    public static WoodsForestLanterns small_forest_lantern = null;
+    public static WoodsForestLanternsTest small_forest_lantern = null;
     public static WoodsForestLanternsTest medium_forest_lantern = null;
     public static WoodsForestLanternsTest large_forest_lantern = null;
 
@@ -88,5 +88,6 @@ public class BlockList {
 
     //for tests only
     public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();
+    public static WoodsGrassBlock grass_block = null;
 
 }

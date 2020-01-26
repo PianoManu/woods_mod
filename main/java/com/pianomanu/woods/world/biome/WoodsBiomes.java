@@ -7,10 +7,13 @@ import net.minecraft.world.biome.*;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+import static com.pianomanu.woods.list.BiomesList.WET_FOREST_BIOME;
 
 @net.minecraftforge.registries.ObjectHolder(WoodsMain.MOD_ID)
-public class Biomes {
-    public static Biome WET_FOREST_BIOME;
+public class WoodsBiomes {
 
     public static void registerBiomes() {
         registerBiome(WET_FOREST_BIOME, Type.FOREST);
