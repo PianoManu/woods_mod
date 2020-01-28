@@ -69,6 +69,8 @@ public class WoodsDefaultBiomeFeatures {
     }*/
 
     public static void addForestLanterns(Biome biomeIn) {
-        biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.BUSH, new BushConfig(BlockList.small_forest_lantern.getDefaultState()), Placement.COUNT_CHANCE_HEIGHTMAP, new HeightWithChanceConfig(1, 0.05F)));
+        biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(ForestLanternsFeature.BUSH, new BushConfig(BlockList.small_forest_lantern.getDefaultState()), Placement.COUNT_CHANCE_HEIGHTMAP, new HeightWithChanceConfig(1, 0.05F)));
+        biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(ForestLanternsFeature.BUSH, new BushConfig(BlockList.medium_forest_lantern.getDefaultState()), Placement.COUNT_CHANCE_HEIGHTMAP, new HeightWithChanceConfig(1, 0.01F)));
+        biomeIn.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(ForestLanternsFeature.BUSH, new BushConfig(BlockList.large_forest_lantern.getDefaultState()), Placement.COUNT_CHANCE_HEIGHTMAP, new HeightWithChanceConfig(1, 0.001F)));
     }
 }

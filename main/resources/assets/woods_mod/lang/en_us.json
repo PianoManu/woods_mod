@@ -9,10 +9,14 @@
 	"item.woods_mod.amethyst_gem": "Amethyst",
 	"item.woods_mod.azurite_gem": "Azurite",
 	"item.woods_mod.green_opal_gem": "Green Opal",
+	"item.woods_mod.rhodochrosite_gem": "Rhodochrosite",
+	"item.woods_mod.rose_quartz_gem": "Rose Quartz",
 	"item.woods_mod.pure_heliodor_gem": "Pure Heliodor",
 	"item.woods_mod.pure_amethyst_gem": "Pure Amethyst",
 	"item.woods_mod.pure_azurite_gem": "Pure Azurite",
 	"item.woods_mod.pure_green_opal_gem": "Pure Green Opal",
+	"item.woods_mod.pure_rhodochrosite_gem": "Pure Rhodochrosite",
+	"item.woods_mod.pure_rose_quartz_gem": "Pure Rose Quartz",
 	
 
 	"block.woods_mod.mossy_oak_log": "Mossy Oak Log",
@@ -52,6 +56,12 @@
 	"block.woods_mod.mossy_acacia_sapling": "Mossy Acacia Sapling",
 	"block.woods_mod.mossy_dark_oak_sapling": "Mossy Dark Oak Sapling",
 	
+	"block.woods_mod.oak_branch": "Oak Branch",
+	"block.woods_mod.oak_cross_branch": "Oak Cross Branch",
+	"block.woods_mod.oak_pillar_branch": "Oak Pillar Branch",
+	"block.woods_mod.oak_all_branch": "Oak Multi-Branch",
+	"block.woods_mod.test_branch": "Test Branch",
+	
 	"block.woods_mod.dirt_slab": "Dirt Slab",
 	"block.woods_mod.grass_slab": "Grass Slab",
 	"block.woods_mod.dirt_stairs": "Dirt Stairs",
@@ -61,17 +71,21 @@
 	"block.woods_mod.moss": "Moss",
 	
 	"block.woods_mod.epidote_ore": "Epidote Ore",
-	"block.woods_mod.epidote_block": "Epidote Block",
 	"block.woods_mod.fire_opal_ore": "Fire Opal Ore",
-	"block.woods_mod.fire_opal_block": "Fire Opal Block",
 	"block.woods_mod.heliodor_ore": "Heliodor Ore",
 	"block.woods_mod.amethyst_ore": "Amethyst Ore",
 	"block.woods_mod.azurite_ore": "Azurite Ore",
 	"block.woods_mod.green_opal_ore": "Green Opal Ore",
+	"block.woods_mod.rhodochrosite_ore": "Rhodochrosite Ore",
+	"block.woods_mod.rose_quartz_ore": "Rose Quartz Ore",
+	"block.woods_mod.epidote_block": "Epidote Block",
+	"block.woods_mod.fire_opal_block": "Fire Opal Block",
 	"block.woods_mod.heliodor_block": "Heliodor Block",
 	"block.woods_mod.amethyst_block": "Amethyst Block",
 	"block.woods_mod.azurite_block": "Azurite Block",
 	"block.woods_mod.green_opal_block": "Green Opal Block",
+	"block.woods_mod.rhodochrosite_block": "Rhodochrosite Block",
+	"block.woods_mod.rose_quartz_block": "Rose Quartz Block",
 	
 	"block.woods_mod.wooden_box": "Wooden Box",
 	

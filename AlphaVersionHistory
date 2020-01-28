@@ -65,7 +65,7 @@ Alpha versions
 		# If you find bugs, let me know
 	====================================================
 		Release 0.1.0 --- 24.01.2020 - Version 0.0.4
-		Test Release
+		Test Release - still alpha
 	====================================================
 	
 	Version 0.0.5 --- 26.01.2020
@@ -81,4 +81,12 @@ Alpha versions
 		* Grass stairs now have a better model
 		* Grass slabs and grass stairs now have in every biome the same texture as grass blocks
 		X Grass stairs placed upside-down look weird, maybe I'll fix it later, if I get how to manage this
+		# If you find bugs, let me know
+		
+	Version 0.0.6 --- 28.01.2020
+		+ Added rose_quartz and rhodochrosite (ores, blocks, gems, pure gems), no in-world generation right now
+		+ Added some sort of oak wood branches, they have no usage right now, only decorative (it was harder than it looks)
+		* Fixed and improved slabsInWorld-feature
+		* Fixed a funny bug, that moss would drop diamond blocks - maybe I was drunk or just too tired back then ^^
+		X Found a bug that broken items have NBT-tags not allowing them to be stacked with normal items
 		# If you find bugs, let me know

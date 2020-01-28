@@ -1,12 +1,14 @@
 package com.pianomanu.woods.init;
 
 import com.pianomanu.woods.WoodsMain;
+import com.pianomanu.woods.item.WallFloorTopItem;
 import com.pianomanu.woods.list.BlockList;
 import com.pianomanu.woods.list.ItemList;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.WallOrFloorItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -42,6 +44,10 @@ public class WoodsItems {
                     ItemList.pure_azurite_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_azurite_gem")),
                     ItemList.green_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("green_opal_gem")),
                     ItemList.pure_green_opal_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_green_opal_gem")),
+                    ItemList.rhodochrosite_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("rhodochrosite_gem")),
+                    ItemList.pure_rhodochrosite_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_rhodochrosite_gem")),
+                    ItemList.rose_quartz_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("rose_quartz_gem")),
+                    ItemList.pure_rose_quartz_gem = new Item(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64)).setRegistryName(location("pure_rose_quartz_gem")),
 
 
 
@@ -93,18 +99,27 @@ public class WoodsItems {
                     ItemList.grass_stairs = new BlockItem(BlockList.grass_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("grass_stairs")),
                     ItemList.dirt_stairs = new BlockItem(BlockList.dirt_stairs, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("dirt_stairs")),
 
-                    //other blocks
+                    //ore blocks/environment blocks
                     ItemList.epidote_ore = new BlockItem(BlockList.epidote_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_ore")),
                     ItemList.fire_opal_ore = new BlockItem(BlockList.fire_opal_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_ore")),
                     ItemList.heliodor_ore = new BlockItem(BlockList.heliodor_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("heliodor_ore")),
                     ItemList.amethyst_ore = new BlockItem(BlockList.amethyst_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("amethyst_ore")),
                     ItemList.azurite_ore = new BlockItem(BlockList.azurite_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("azurite_ore")),
                     ItemList.green_opal_ore = new BlockItem(BlockList.green_opal_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("green_opal_ore")),
+                    ItemList.rose_quartz_ore = new BlockItem(BlockList.rose_quartz_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("rose_quartz_ore")),
+                    ItemList.rhodochrosite_ore = new BlockItem(BlockList.rhodochrosite_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("rhodochrosite_ore")),
 
                     ItemList.mossy_dirt = new BlockItem(BlockList.mossy_dirt, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("mossy_dirt")),
+                    //ItemList.oak_branch = new BlockItem(BlockList.oak_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_branch")),
+                    ItemList.oak_branch = new WallFloorTopItem(BlockList.oak_branch, BlockList.oak_wall_branch, BlockList.oak_up_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_branch"),
+                    //ItemList.oak_cross_branch = new WallFloorTopItem(BlockList.oak_branch, BlockList.oak_wall_branch, BlockList.oak_up_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_cross_branch"),
+                    ItemList.oak_cross_branch = new BlockItem(BlockList.oak_cross_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_cross_branch")),
+                    ItemList.oak_pillar_branch = new BlockItem(BlockList.oak_pillar_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_pillar_branch"),
+                    ItemList.oak_all_branch = new BlockItem(BlockList.oak_all_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_all_branch"),
+                    ItemList.test_branch = new BlockItem(BlockList.test_branch, new Item.Properties()).setRegistryName(location("test_branch")),
 
                     //organic decoration
-                    ItemList.mossy_dirt = new BlockItem(BlockList.moss, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("moss")),
+                    ItemList.moss = new BlockItem(BlockList.moss, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("moss")),
 
                     //blocks with usage
                     ItemList.wooden_box = new BlockItem(BlockList.wooden_box, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("wooden_box")),
@@ -113,12 +128,15 @@ public class WoodsItems {
                     ItemList.medium_forest_lantern = new BlockItem(BlockList.medium_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("medium_forest_lantern")),
                     ItemList.large_forest_lantern = new BlockItem(BlockList.large_forest_lantern, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("large_forest_lantern")),
 
+                    //decorative blocks
                     ItemList.epidote_block = new BlockItem(BlockList.epidote_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("epidote_block")),
                     ItemList.fire_opal_block = new BlockItem(BlockList.fire_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("fire_opal_block")),
                     ItemList.heliodor_block = new BlockItem(BlockList.heliodor_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("heliodor_block")),
                     ItemList.amethyst_block = new BlockItem(BlockList.amethyst_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("amethyst_block")),
                     ItemList.azurite_block = new BlockItem(BlockList.azurite_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("azurite_block")),
-                    ItemList.green_opal_block = new BlockItem(BlockList.green_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("green_opal_block"))
+                    ItemList.green_opal_block = new BlockItem(BlockList.green_opal_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("green_opal_block")),
+                    ItemList.rose_quartz_block = new BlockItem(BlockList.rose_quartz_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("rose_quartz_block")),
+                    ItemList.rhodochrosite_block = new BlockItem(BlockList.rhodochrosite_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS).maxStackSize(64)).setRegistryName(location("rhodochrosite_block"))
 
 
             );

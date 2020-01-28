@@ -7,20 +7,14 @@ import com.pianomanu.woods.block.trees.*;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import static com.pianomanu.woods.list.BlockList.INVENTORY_BLOCK;
 
 public class WoodsBlocks {
 
@@ -93,9 +87,18 @@ public class WoodsBlocks {
                     BlockList.amethyst_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("amethyst_ore")),
                     BlockList.azurite_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("azurite_ore")),
                     BlockList.green_opal_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_ore")),
+                    BlockList.rose_quartz_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rose_quartz_ore")),
+                    BlockList.rhodochrosite_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rhodochrosite_ore")),
 
                     //wet forest environment blocks
                     BlockList.mossy_dirt = new GrassBlock(Block.Properties.create(Material.ORGANIC, MaterialColor.DIRT).tickRandomly().hardnessAndResistance(0.6F).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("mossy_dirt")),
+                    BlockList.oak_branch = (WoodsBranchBlock) new WoodsBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_branch")),
+                    BlockList.oak_up_branch = (WoodsUpBranchBlock) new WoodsUpBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_up_branch")),
+                    BlockList.oak_wall_branch = (WoodsWallBranchBlock) new WoodsWallBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_wall_branch")),
+                    BlockList.oak_cross_branch = (WoodsCrossBranchBlock) new WoodsCrossBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_cross_branch")),
+                    BlockList.oak_pillar_branch = (WoodsPillarBranchBlock) new WoodsPillarBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_pillar_branch")),
+                    BlockList.oak_all_branch = (WoodsAllBranchBlock) new WoodsAllBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_all_branch")),
+                    BlockList.test_branch = (WoodsBaseBranchBlock) new WoodsBaseBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)).setRegistryName("test_branch"),
 
                     //organic decoration
                     BlockList.moss = (WoodsMossBlock) new WoodsMossBlock(Block.Properties.create(Material.SNOW, MaterialColor.SNOW).tickRandomly().hardnessAndResistance(0.0F).sound(SoundType.PLANT)).setRegistryName(location("moss")), //.harvestTool(ToolType.SHOVEL)
@@ -112,7 +115,10 @@ public class WoodsBlocks {
                     BlockList.heliodor_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("heliodor_block")),
                     BlockList.amethyst_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("amethyst_block")),
                     BlockList.azurite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("azurite_block")),
-                    BlockList.green_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_block"))
+                    BlockList.green_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_block")),
+                    BlockList.rose_quartz_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rose_quartz_block")),
+                    BlockList.rhodochrosite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rhodochrosite_block"))
+
 
 
             );

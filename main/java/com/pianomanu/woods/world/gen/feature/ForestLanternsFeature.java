@@ -27,7 +27,6 @@ public class ForestLanternsFeature extends Feature<NoFeatureConfig> {
     public boolean place(IWorld worldIn, ChunkGenerator<? extends GenerationSettings> generator, Random rand, BlockPos pos, NoFeatureConfig config) {
         BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
         BlockPos.MutableBlockPos blockpos$mutableblockpos1 = new BlockPos.MutableBlockPos();
-
         for(int i = 0; i < 16; ++i) {
             for(int j = 0; j < 16; ++j) {
                 int k = pos.getX() + i;
@@ -36,8 +35,8 @@ public class ForestLanternsFeature extends Feature<NoFeatureConfig> {
                 blockpos$mutableblockpos.setPos(k, i1, l);
                 blockpos$mutableblockpos1.setPos(blockpos$mutableblockpos).move(Direction.DOWN, 1);
                 WoodsBiome biome = (WoodsBiome) worldIn.getBiome(blockpos$mutableblockpos);
-
-                if (biome.doesMossGenerate(worldIn, blockpos$mutableblockpos)) {
+                int chance = new Random().nextInt(40);
+                if (chance == 1) {
                     worldIn.setBlockState(blockpos$mutableblockpos, BlockList.moss.getDefaultState(), 2);
                     BlockState blockstate = worldIn.getBlockState(blockpos$mutableblockpos1);
                     if (blockstate.has(WoodsMossBlock.MOSSY)) {

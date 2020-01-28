@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "level=top":  { "model": "woods_mod:block/oak_cross_branch_top"},
+		"level=mid":  { "model": "woods_mod:block/oak_cross_branch_mid"},
+		"level=bottom":  { "model": "woods_mod:block/oak_cross_branch"}
+    }
+}

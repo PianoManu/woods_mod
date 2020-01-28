@@ -79,6 +79,13 @@ public class WoodsLootTables extends WoodsBaseLootTableProvider {
         lootTables.put(BlockList.medium_forest_lantern, createStandardTable("medium_forest_lantern", BlockList.medium_forest_lantern));
         lootTables.put(BlockList.large_forest_lantern, createStandardTable("large_forest_lantern", BlockList.large_forest_lantern));
 
+        lootTables.put(BlockList.oak_branch, createStandardTable("oak_branch", BlockList.oak_branch));
+        lootTables.put(BlockList.oak_up_branch, createStandardTable("oak_branch", BlockList.oak_branch));
+        lootTables.put(BlockList.oak_wall_branch, createStandardTable("oak_branch", BlockList.oak_branch));
+        lootTables.put(BlockList.oak_all_branch, createStandardTable("oak_branch", BlockList.oak_all_branch));
+        lootTables.put(BlockList.oak_pillar_branch, createStandardTable("oak_branch", BlockList.oak_pillar_branch));
+        lootTables.put(BlockList.oak_cross_branch, createStandardTable("oak_branch", BlockList.oak_cross_branch));
+
         //lootTables.put(BlockList.wooden_box, createStandardTable("wooden_box", BlockList.wooden_box));
 
 

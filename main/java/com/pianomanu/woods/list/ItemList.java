@@ -15,13 +15,13 @@ public class ItemList {
     public static Item amethyst_gem = null;
     public static Item azurite_gem = null;
     public static Item rhodochrosite_gem = null;
-    public static Item rose_quarz_gem = null;
+    public static Item rose_quartz_gem = null;
     public static Item green_opal_gem = null;
     public static Item pure_heliodor_gem = null;
     public static Item pure_amethyst_gem = null;
     public static Item pure_azurite_gem = null;
     public static Item pure_rhodochrosite_gem = null;
-    public static Item pure_rose_quarz_gem = null;
+    public static Item pure_rose_quartz_gem = null;
     public static Item pure_green_opal_gem = null;
 
 
@@ -78,11 +78,15 @@ public class ItemList {
     public static Item amethyst_ore;
     public static Item azurite_ore;
     public static Item rhodochrosite_ore;
-    public static Item rose_quarz_ore;
+    public static Item rose_quartz_ore;
     public static Item green_opal_ore;
 
     public static Item mossy_dirt;
     public static Item moss;
+    public static Item oak_branch;
+    public static Item oak_cross_branch;
+    public static Item oak_pillar_branch;
+    public static Item oak_all_branch;
 
     public static Item wooden_box;
 
@@ -96,6 +100,8 @@ public class ItemList {
     public static Item amethyst_block;
     public static Item azurite_block;
     public static Item rhodochrosite_block;
-    public static Item rose_quarz_block;
+    public static Item rose_quartz_block;
     public static Item green_opal_block;
+
+    public static Item test_branch;
 }

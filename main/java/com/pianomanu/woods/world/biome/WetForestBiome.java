@@ -10,6 +10,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
+import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
@@ -21,6 +22,7 @@ public class WetForestBiome extends WoodsBiome {
         this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
         this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
         this.addStructure(Feature.END_CITY, IFeatureConfig.NO_FEATURE_CONFIG);
+        this.addStructure(Feature.VILLAGE, new VillageConfig("village/plains/town_centers", 6));
         DefaultBiomeFeatures.addCarvers(this);
         DefaultBiomeFeatures.addStructures(this);
         DefaultBiomeFeatures.addMonsterRooms(this);
@@ -37,7 +39,6 @@ public class WetForestBiome extends WoodsBiome {
         WoodsDefaultBiomeFeatures.addVanillaAndWoodsOres(this);
         WoodsDefaultBiomeFeatures.addMossSedimentDisks(this);
         WoodsDefaultBiomeFeatures.addMossVegetation(this);
-        //WoodsDefaultBiomeFeatures.addGrassSlabs(this);
         WoodsDefaultBiomeFeatures.addForestLanterns(this);
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));

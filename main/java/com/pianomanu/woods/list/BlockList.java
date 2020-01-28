@@ -1,6 +1,7 @@
 package com.pianomanu.woods.list;
 
 import com.pianomanu.woods.block.*;
+import com.pianomanu.woods.block.trees.WoodsCrossBranchBlock;
 import com.pianomanu.woods.init.WoodsGrassBlock;
 import net.minecraft.block.*;
 
@@ -61,12 +62,19 @@ public class BlockList {
     public static OreBlock amethyst_ore = null;
     public static OreBlock azurite_ore = null;
     public static OreBlock rhodochrosite_ore = null;
-    public static OreBlock rose_quarz_ore = null;
+    public static OreBlock rose_quartz_ore = null;
     public static OreBlock green_opal_ore = null;
 
 
     //natural blocks
     public static Block mossy_dirt = null;
+    public static WoodsBranchBlock oak_branch = null;
+    public static WoodsUpBranchBlock oak_up_branch = null;
+    public static WoodsWallBranchBlock oak_wall_branch = null;
+    public static WoodsCrossBranchBlock oak_cross_branch = null;
+    public static WoodsPillarBranchBlock oak_pillar_branch = null;
+    public static WoodsAllBranchBlock oak_all_branch = null;
+
 
     public static WoodsMossBlock moss = null;
 
@@ -83,11 +91,12 @@ public class BlockList {
     public static Block amethyst_block = null;
     public static Block azurite_block = null;
     public static Block rhodochrosite_block = null;
-    public static Block rose_quarz_block = null;
+    public static Block rose_quartz_block = null;
     public static Block green_opal_block = null;
 
     //for tests only
     public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();
     public static WoodsGrassBlock grass_block = null;
+    public static WoodsBaseBranchBlock test_branch = null;
 
 }

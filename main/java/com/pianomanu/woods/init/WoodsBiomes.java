@@ -25,6 +25,7 @@ public class WoodsBiomes {
 
             event.getRegistry().registerAll(
                     BiomesList.WET_FOREST_BIOME = new WetForestBiome().setRegistryName(location("wet_forest_biome"))
+                    //BiomesList.SHARP_MOUNTAINS_BIOME = new SharpMountainsBiome().setRegistryName(location("sharp_mountains_biome"))
             );
 
             com.pianomanu.woods.world.biome.WoodsBiomes.registerBiomes();
