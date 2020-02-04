@@ -98,10 +98,10 @@ public class WoodsBlocks {
                     BlockList.oak_cross_branch = (WoodsCrossBranchBlock) new WoodsCrossBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_cross_branch")),
                     BlockList.oak_pillar_branch = (WoodsPillarBranchBlock) new WoodsPillarBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_pillar_branch")),
                     BlockList.oak_all_branch = (WoodsAllBranchBlock) new WoodsAllBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName(location("oak_all_branch")),
-                    BlockList.test_branch = (WoodsBaseBranchBlock) new WoodsBaseBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)).setRegistryName("test_branch"),
+                    BlockList.oak_flexible_branch = (WoodsBaseBranchBlock) new WoodsBaseBranchBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).harvestLevel(1).harvestTool(ToolType.AXE).sound(SoundType.WOOD)).setRegistryName("oak_flexible_branch"),
 
                     //organic decoration
-                    BlockList.moss = (WoodsMossBlock) new WoodsMossBlock(Block.Properties.create(Material.SNOW, MaterialColor.SNOW).tickRandomly().hardnessAndResistance(0.0F).sound(SoundType.PLANT)).setRegistryName(location("moss")), //.harvestTool(ToolType.SHOVEL)
+                    BlockList.moss = (WoodsMossBlock) new WoodsMossBlock(Block.Properties.create(Material.SNOW, MaterialColor.SNOW).tickRandomly().hardnessAndResistance(0.0F).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("moss")),
 
                     //blocks with usage
                     BlockList.wooden_box = (InventoryBlock) new InventoryBlock().setRegistryName(location("wooden_box")),

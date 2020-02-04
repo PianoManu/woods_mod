@@ -57,10 +57,10 @@
 	"block.woods_mod.mossy_dark_oak_sapling": "Mossy Dark Oak Sapling",
 	
 	"block.woods_mod.oak_branch": "Oak Branch",
-	"block.woods_mod.oak_cross_branch": "Oak Cross Branch",
-	"block.woods_mod.oak_pillar_branch": "Oak Pillar Branch",
+	"block.woods_mod.oak_cross_branch": "Crossed Oak Branch",
+	"block.woods_mod.oak_pillar_branch": "Oak Pillar-Branch",
 	"block.woods_mod.oak_all_branch": "Oak Multi-Branch",
-	"block.woods_mod.test_branch": "Test Branch",
+	"block.woods_mod.oak_flexible_branch": "Flexible Oak Branch",
 	
 	"block.woods_mod.dirt_slab": "Dirt Slab",
 	"block.woods_mod.grass_slab": "Grass Slab",

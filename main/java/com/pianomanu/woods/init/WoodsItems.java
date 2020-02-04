@@ -4,11 +4,9 @@ import com.pianomanu.woods.WoodsMain;
 import com.pianomanu.woods.item.WallFloorTopItem;
 import com.pianomanu.woods.list.BlockList;
 import com.pianomanu.woods.list.ItemList;
-import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.WallOrFloorItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,7 +14,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.system.CallbackI;
 
 public class WoodsItems {
 
@@ -114,9 +111,9 @@ public class WoodsItems {
                     ItemList.oak_branch = new WallFloorTopItem(BlockList.oak_branch, BlockList.oak_wall_branch, BlockList.oak_up_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_branch"),
                     //ItemList.oak_cross_branch = new WallFloorTopItem(BlockList.oak_branch, BlockList.oak_wall_branch, BlockList.oak_up_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_cross_branch"),
                     ItemList.oak_cross_branch = new BlockItem(BlockList.oak_cross_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_cross_branch")),
-                    ItemList.oak_pillar_branch = new BlockItem(BlockList.oak_pillar_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_pillar_branch"),
-                    ItemList.oak_all_branch = new BlockItem(BlockList.oak_all_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName("oak_all_branch"),
-                    ItemList.test_branch = new BlockItem(BlockList.test_branch, new Item.Properties()).setRegistryName(location("test_branch")),
+                    ItemList.oak_pillar_branch = new BlockItem(BlockList.oak_pillar_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_pillar_branch")),
+                    ItemList.oak_all_branch = new BlockItem(BlockList.oak_all_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_all_branch")),
+                    ItemList.oak_flexible_branch = new BlockItem(BlockList.oak_flexible_branch, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("oak_flexible_branch")),
 
                     //organic decoration
                     ItemList.moss = new BlockItem(BlockList.moss, new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64)).setRegistryName(location("moss")),

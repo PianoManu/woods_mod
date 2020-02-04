@@ -97,6 +97,6 @@ public class BlockList {
     //for tests only
     public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();
     public static WoodsGrassBlock grass_block = null;
-    public static WoodsBaseBranchBlock test_branch = null;
+    public static WoodsBaseBranchBlock oak_flexible_branch = null;
 
 }

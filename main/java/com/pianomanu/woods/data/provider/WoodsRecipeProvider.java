@@ -3,11 +3,9 @@ package com.pianomanu.woods.data.provider;
 import com.pianomanu.woods.list.BlockList;
 import com.pianomanu.woods.list.ItemList;
 import com.pianomanu.woods.tags.WoodsItemTags;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
-import net.minecraft.data.ShapedRecipeBuilder;
+import net.minecraft.data.*;
 import net.minecraft.item.Items;
+import org.lwjgl.system.CallbackI;
 
 import java.util.function.Consumer;
 
@@ -23,7 +21,7 @@ public class WoodsRecipeProvider extends RecipeProvider {
     public void registerRecipes(Consumer<IFinishedRecipe> consumer) {
 
         //TODO Change Recipes
-        ShapedRecipeBuilder.shapedRecipe(ItemList.pure_epidote_gem, 1).key('#', ItemList.epidote_gem).key('I', Items.STICK).patternLine("###").patternLine("#I#").patternLine("###").addCriterion("has_epidote_gems", this.hasItem(ItemList.epidote_gem)).build(consumer);
+        /*ShapedRecipeBuilder.shapedRecipe(ItemList.pure_epidote_gem, 1).key('#', ItemList.epidote_gem).key('I', Items.STICK).patternLine("###").patternLine("#I#").patternLine("###").addCriterion("has_epidote_gems", this.hasItem(ItemList.epidote_gem)).build(consumer);
         ShapedRecipeBuilder.shapedRecipe(ItemList.pure_fire_opal_gem, 1).key('#', ItemList.fire_opal_gem).key('I', Items.STICK).patternLine("###").patternLine("#I#").patternLine("###").addCriterion("has_fire_opal_gems", this.hasItem(ItemList.fire_opal_gem)).build(consumer);
         ShapedRecipeBuilder.shapedRecipe(ItemList.pure_green_opal_gem, 1).key('#', ItemList.green_opal_gem).key('I', Items.STICK).patternLine("###").patternLine("#I#").patternLine("###").addCriterion("has_green_opal_gems", this.hasItem(ItemList.green_opal_gem)).build(consumer);
         ShapedRecipeBuilder.shapedRecipe(ItemList.pure_azurite_gem, 1).key('#', ItemList.azurite_gem).key('I', Items.STICK).patternLine("###").patternLine("#I#").patternLine("###").addCriterion("has_azurite_gems", this.hasItem(ItemList.azurite_gem)).build(consumer);
@@ -41,6 +39,16 @@ public class WoodsRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shapedRecipe(ItemList.small_forest_lantern, 4).key('#', ItemList.moss_item).key('+', Items.STICK).patternLine("#").patternLine("+").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
         ShapedRecipeBuilder.shapedRecipe(ItemList.medium_forest_lantern, 4).key('#', ItemList.moss_item).key('+', ItemList.small_forest_lantern).patternLine("#+#").patternLine("+#+").patternLine("#+#").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
         ShapedRecipeBuilder.shapedRecipe(ItemList.large_forest_lantern, 4).key('#', ItemList.moss_item).key('+', ItemList.medium_forest_lantern).patternLine("#+#").patternLine("+++").patternLine("#+#").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
+         */
+        //ShapedRecipeBuilder.shapedRecipe(ItemList.oak_branch, 4).key('#',Items.OAK_LOG).key('+', ItemList.moss_item).patternLine(" + ").patternLine("+#+").patternLine(" + ").addCriterion("has_moss", this.hasItem(ItemList.moss_item)).build(consumer);
+        //ShapedRecipeBuilder.shapedRecipe(ItemList.oak_all_branch, 5).key('#', ItemList.oak_branch).patternLine(" # ").patternLine("###").patternLine(" # ").addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapedRecipeBuilder.shapedRecipe(ItemList.oak_pillar_branch, 3).key('#', ItemList.oak_branch).patternLine("#").patternLine("#").patternLine("#").addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapedRecipeBuilder.shapedRecipe(ItemList.oak_cross_branch, 4).key('#', ItemList.oak_branch).patternLine(" # ").patternLine("# #").patternLine(" # ").addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapelessRecipeBuilder.shapelessRecipe(ItemList.oak_flexible_branch, 1).addIngredient(ItemList.oak_branch).addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapelessRecipeBuilder.shapelessRecipe(ItemList.oak_branch, 1).addIngredient(ItemList.oak_all_branch).addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapelessRecipeBuilder.shapelessRecipe(ItemList.oak_branch, 1).addIngredient(ItemList.oak_cross_branch).addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapelessRecipeBuilder.shapelessRecipe(ItemList.oak_branch, 1).addIngredient(ItemList.oak_pillar_branch).addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
+        //ShapelessRecipeBuilder.shapelessRecipe(ItemList.oak_branch, 1).addIngredient(ItemList.oak_flexible_branch).addCriterion("has_branches", this.hasItem(ItemList.oak_branch)).build(consumer);
     }
 
 }
