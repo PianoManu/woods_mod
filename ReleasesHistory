@@ -1,0 +1,51 @@
+Beta "Releases"
+======================
+
+					+	new content
+					-	removed old/broken/unused content
+					*	modified existing content
+					X	known bugs (not fixed, because I'm too stupid or the content will be removed or rewritten later on)
+					#	comments
+	
+	===========================================================
+		Release 0.1.0 --- 24.01.2020 - Version 0.0.4 (Alpha)
+		Test Release - still alpha (not a real release)
+	===========================================================
+		+ Added 6 different vanilla-similar logtypes: "mossy ... log" (they drop their vanilla counterparts)
+		+ Added 6 different vanilla-similar planks: "mossy ... planks"
+		+ Added 6 different vanilla-similar stairs: "mossy ... stairs"
+		+ Added 6 different vanilla-similar slabs: "mossy ... slabs"
+		+ Added 6 different vanilla-similar fences: "mossy ... fences"
+		+ Added 6 trees containing the new mossy logs (they look similar to their vanilla counterparts and can be grown by planting saplings - see next point)
+		+ Added 6 saplings growing their trees
+		+ Added some material items like moss and mossy_sticks
+		+ Added 12 gems, 6 ores and 6 gem blocks
+		+ Added 1 tiny light source (emits light level 4)
+		+ Added 1 container wooden_box, can store items like a large chest
+		+ Added 1 biome "wet_forest_biome"
+			+ "fire_opal_ore" and "epidote_ore" are generated quite frequently
+			+ Mossy oak trees (huge and normal) and birch trees are generated instead of normal vanilla trees
+			+ "mossy_dirt" is generated near lakes
+			+ "moss" is generated frequently similar to grass
+		+ Added grass slabs, dirt slabs, grass stairs, dirt stairs
+		+ Grass slabs are now generated in Wet Forest biome to smooth the terrain
+		+ Added LOTS OF BUGS (p.s. let me know if you find some)
+		
+	================================================================
+		Release 0.1.1 --- 08.02.2020 - Version 0.0.8 (last Alpha)
+		First beta release
+	================================================================
+		+ Added medium_forest_lantern and large_forest_lantern, emitting 8 and 15 light level
+		+ Wet Forest biome is now generated in the normal Default-world type
+		+ Woods ores are now generated in every biome
+		+ Grass slabs are now generated in every biome containing grass
+		+ Added rose_quartz and rhodochrosite (ores, blocks, gems, pure gems)
+		+ Added some sort of oak wood branches, they have no usage right now, only decorative (it was harder than it looks), the "flexible" one behaves like pipes (they connect to other blocks)
+		+ Added sand and gravel slabs, they are generated similar to grass and stone slabs and are affected by gravity
+		+ Added sand and gravel stairs, they are affected by gravity
+		* Moss is now rendered translucent
+		* Fixed textures of grass slab and grass stairs, also they got the grass overlay
+		* Changed the model of all three forest lanterns, they're pretty fancy now (at least that's what I think :D )
+		* Grass stairs now have a better model
+		* Grass slabs and grass stairs now have in every biome the same texture as grass blocks
+		* Changed some mod descriptions

@@ -24,12 +24,12 @@ displayURL="no Webpage yet" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Huge Thanks to Jabelar and Harry Talks for their wonderful tips for modding" #optional
+credits="Huge Thanks to Jabelar, HyCraftHD and Harry Talks for their wonderful tips for modding" #optional
 # A text field displayed in the mod UI
 authors="PianoManu" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Description maybe later...
+A mod for Minecraft, consisting features themed in the forest.
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.

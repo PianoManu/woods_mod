@@ -16,6 +16,8 @@ import net.minecraftforge.registries.ObjectHolder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.function.Supplier;
+
 public class WoodsBlocks {
 
     private static final Logger logger = LogManager.getLogger(WoodsMain.MOD_ID);
@@ -73,12 +75,16 @@ public class WoodsBlocks {
                     //other slabs
                     BlockList.grass_slab = (WoodsSlabNoDouble) new WoodsSlabNoDouble(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.6f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("grass_slab")),
                     BlockList.dirt_slab = (SlabBlock) new SlabBlock(Block.Properties.create(Material.EARTH).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("dirt_slab")),
+                    BlockList.sand_slab = (WoodsFallingSlab) new WoodsFallingSlab(Block.Properties.create(Material.SAND).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.SAND)).setRegistryName(location("sand_slab")),
+                    BlockList.gravel_slab = (WoodsFallingSlab) new WoodsFallingSlab(Block.Properties.create(Material.SAND, MaterialColor.STONE).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("gravel_slab")),
                     //test
                     BlockList.grass_block = (WoodsGrassBlock) new WoodsGrassBlock(Block.Properties.create(Material.ORGANIC).sound(SoundType.PLANT)).setRegistryName(location("grass_block")),
 
                     //other stairs
                     BlockList.grass_stairs = (WoodsStairsCutoutMipped) new WoodsStairsCutoutMipped(Blocks.GRASS_BLOCK.getDefaultState(), Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.6f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("grass_stairs")),
                     BlockList.dirt_stairs = (StairsBlock) new WoodsStairs(Blocks.DIRT.getDefaultState(), Block.Properties.create(Material.EARTH).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("dirt_stairs")),
+                    BlockList.sand_stairs = (WoodsFallingStairs) new WoodsFallingStairs(Blocks.SAND.getDefaultState(), Block.Properties.create(Material.SAND).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.SAND)).setRegistryName(location("sand_stairs")),
+                    BlockList.gravel_stairs = (WoodsFallingStairs) new WoodsFallingStairs(Blocks.GRAVEL.getDefaultState(), Block.Properties.create(Material.SAND, MaterialColor.STONE).hardnessAndResistance(0.5f).harvestLevel(0).harvestTool(ToolType.SHOVEL).sound(SoundType.GROUND)).setRegistryName(location("gravel_stairs")),
 
                     //oreblocks
                     BlockList.epidote_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("epidote_ore")),
@@ -89,6 +95,7 @@ public class WoodsBlocks {
                     BlockList.green_opal_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_ore")),
                     BlockList.rose_quartz_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rose_quartz_ore")),
                     BlockList.rhodochrosite_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rhodochrosite_ore")),
+                    BlockList.purity_ore = (OreBlock) new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(10.0F).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("purity_ore")),
 
                     //wet forest environment blocks
                     BlockList.mossy_dirt = new GrassBlock(Block.Properties.create(Material.ORGANIC, MaterialColor.DIRT).tickRandomly().hardnessAndResistance(0.6F).harvestTool(ToolType.SHOVEL).sound(SoundType.PLANT)).setRegistryName(location("mossy_dirt")),
@@ -117,7 +124,8 @@ public class WoodsBlocks {
                     BlockList.azurite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("azurite_block")),
                     BlockList.green_opal_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("green_opal_block")),
                     BlockList.rose_quartz_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rose_quartz_block")),
-                    BlockList.rhodochrosite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rhodochrosite_block"))
+                    BlockList.rhodochrosite_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("rhodochrosite_block")),
+                    BlockList.purity_gem_block = new OreBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(10.0F).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName(location("purity_gem_block"))
 
 
 

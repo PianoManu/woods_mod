@@ -2,39 +2,45 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "azurite_gem",
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:copy_nbt",
-              "source": "block_entity",
-              "ops": [
+              "type": "minecraft:item",
+              "conditions": [
                 {
-                  "source": "inv",
-                  "target": "BlockEntityTag.inv",
-                  "op": "replace"
-                },
-                {
-                  "source": "energy",
-                  "target": "BlockEntityTag.energy",
-                  "op": "replace"
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
                 }
-              ]
+              ],
+              "name": "woods_mod:azurite_ore"
             },
             {
-              "function": "minecraft:set_contents",
-              "entries": [
+              "type": "minecraft:item",
+              "functions": [
                 {
-                  "type": "minecraft:dynamic",
-                  "name": "minecraft:contents"
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
-              ]
+              ],
+              "name": "woods_mod:azurite_gem"
             }
-          ],
-          "name": "woods_mod:azurite_gem"
+          ]
         }
       ]
     }

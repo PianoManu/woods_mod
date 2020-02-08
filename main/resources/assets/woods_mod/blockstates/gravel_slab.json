@@ -1,0 +1,7 @@
+{
+    "variants": {
+		"": [
+			{ "model": "woods_mod:block/gravel_slab" }
+		]
+    }
+}

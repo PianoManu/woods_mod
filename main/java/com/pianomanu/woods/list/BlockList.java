@@ -31,6 +31,8 @@ public class BlockList {
 
     public static WoodsStairsCutoutMipped grass_stairs = null;
     public static StairsBlock dirt_stairs = null;
+    public static WoodsFallingStairs sand_stairs = null;
+    public static WoodsFallingStairs gravel_stairs = null;
     //Slabs
     public static SlabBlock mossy_oak_slab = null;
     public static SlabBlock mossy_birch_slab = null;
@@ -41,6 +43,9 @@ public class BlockList {
 
     public static WoodsSlabNoDouble grass_slab = null;
     public static SlabBlock dirt_slab = null;
+    public static WoodsFallingSlab sand_slab = null;
+    public static WoodsFallingSlab gravel_slab = null;
+
     //Fences
     public static FenceBlock mossy_oak_fence = null;
     public static FenceBlock mossy_birch_fence = null;
@@ -64,7 +69,7 @@ public class BlockList {
     public static OreBlock rhodochrosite_ore = null;
     public static OreBlock rose_quartz_ore = null;
     public static OreBlock green_opal_ore = null;
-
+    public static OreBlock purity_ore = null;
 
     //natural blocks
     public static Block mossy_dirt = null;
@@ -93,6 +98,7 @@ public class BlockList {
     public static Block rhodochrosite_block = null;
     public static Block rose_quartz_block = null;
     public static Block green_opal_block = null;
+    public static Block purity_gem_block = null;
 
     //for tests only
     public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();

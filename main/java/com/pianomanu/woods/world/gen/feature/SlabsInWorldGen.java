@@ -86,7 +86,16 @@ public class SlabsInWorldGen extends Feature<NoFeatureConfig> {
                     if (blockStateWest == Blocks.AIR.getDefaultState() || blockStateNorth == Blocks.AIR.getDefaultState() || blockStateEast == Blocks.AIR.getDefaultState() || blockStateSouth == Blocks.AIR.getDefaultState() || blockStateWest == Blocks.GRASS.getDefaultState() || blockStateNorth == Blocks.GRASS.getDefaultState() || blockStateEast == Blocks.GRASS.getDefaultState() || blockStateSouth == Blocks.GRASS.getDefaultState()) {
                         isAtLevelDifference = true;
                     }
-                    if (blockStateWest == Blocks.SANDSTONE_SLAB.getDefaultState() || blockStateNorth == Blocks.SANDSTONE_SLAB.getDefaultState() || blockStateEast == Blocks.SANDSTONE_SLAB.getDefaultState() || blockStateSouth == Blocks.SANDSTONE_SLAB.getDefaultState() || blockStateWest == Blocks.GRASS.getDefaultState() || blockStateNorth == Blocks.GRASS.getDefaultState() || blockStateEast == Blocks.GRASS.getDefaultState() || blockStateSouth == Blocks.GRASS.getDefaultState()) {
+                    if (blockStateWest == BlockList.sand_slab.getDefaultState() || blockStateNorth == BlockList.sand_slab.getDefaultState() || blockStateEast == BlockList.sand_slab.getDefaultState() || blockStateSouth == BlockList.sand_slab.getDefaultState() || blockStateWest == Blocks.GRASS.getDefaultState() || blockStateNorth == Blocks.GRASS.getDefaultState() || blockStateEast == Blocks.GRASS.getDefaultState() || blockStateSouth == Blocks.GRASS.getDefaultState()) {
+                        isAtLevelDifference = true;
+                    }
+                }
+                //gravel regions
+                if ((blockStateWest == Blocks.GRAVEL.getDefaultState() && blockStateEastDown == Blocks.GRAVEL.getDefaultState()) || (blockStateNorth == Blocks.GRAVEL.getDefaultState() && blockStateSouthDown == Blocks.GRAVEL.getDefaultState()) || (blockStateEast == Blocks.GRAVEL.getDefaultState() && blockStateWestDown == Blocks.GRAVEL.getDefaultState()) || (blockStateSouth == Blocks.GRAVEL.getDefaultState() && blockStateNorthDown == Blocks.GRAVEL.getDefaultState())) {
+                    if (blockStateWest == Blocks.AIR.getDefaultState() || blockStateNorth == Blocks.AIR.getDefaultState() || blockStateEast == Blocks.AIR.getDefaultState() || blockStateSouth == Blocks.AIR.getDefaultState() || blockStateWest == Blocks.GRASS.getDefaultState() || blockStateNorth == Blocks.GRASS.getDefaultState() || blockStateEast == Blocks.GRASS.getDefaultState() || blockStateSouth == Blocks.GRASS.getDefaultState()) {
+                        isAtLevelDifference = true;
+                    }
+                    if (blockStateWest == BlockList.gravel_slab.getDefaultState() || blockStateNorth == BlockList.gravel_slab.getDefaultState() || blockStateEast == BlockList.gravel_slab.getDefaultState() || blockStateSouth == BlockList.gravel_slab.getDefaultState() || blockStateWest == Blocks.GRASS.getDefaultState() || blockStateNorth == Blocks.GRASS.getDefaultState() || blockStateEast == Blocks.GRASS.getDefaultState() || blockStateSouth == Blocks.GRASS.getDefaultState()) {
                         isAtLevelDifference = true;
                     }
                 }
@@ -114,9 +123,15 @@ public class SlabsInWorldGen extends Feature<NoFeatureConfig> {
                         worldIn.setBlockState(blockpos$mutableblockpos1, Blocks.DIRT.getDefaultState(), 2);
                     }
                 }
-                //TODO think about gravel sand slabs for desert and gravel regions, maybe
                 if (blockstate == Blocks.SAND.getDefaultState() && isAtLevelDifference) {
-                    worldIn.setBlockState(blockpos$mutableblockpos, Blocks.SANDSTONE_SLAB.getDefaultState(), 2);
+                    worldIn.setBlockState(blockpos$mutableblockpos, BlockList.sand_slab.getDefaultState(), 2);
+                    worldIn.setBlockState(blockpos$mutableblockposUp, Blocks.AIR.getDefaultState(), 2);
+                    if (blockStateDown == Blocks.GRASS_BLOCK.getDefaultState()) {
+                        worldIn.setBlockState(blockpos$mutableblockpos1, Blocks.DIRT.getDefaultState(), 2);
+                    }
+                }
+                if (blockstate == Blocks.GRAVEL.getDefaultState() && isAtLevelDifference) {
+                    worldIn.setBlockState(blockpos$mutableblockpos, BlockList.gravel_slab.getDefaultState(), 2);
                     worldIn.setBlockState(blockpos$mutableblockposUp, Blocks.AIR.getDefaultState(), 2);
                     if (blockStateDown == Blocks.GRASS_BLOCK.getDefaultState()) {
                         worldIn.setBlockState(blockpos$mutableblockpos1, Blocks.DIRT.getDefaultState(), 2);

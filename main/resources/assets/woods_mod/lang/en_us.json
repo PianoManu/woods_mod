@@ -17,6 +17,7 @@
 	"item.woods_mod.pure_green_opal_gem": "Pure Green Opal",
 	"item.woods_mod.pure_rhodochrosite_gem": "Pure Rhodochrosite",
 	"item.woods_mod.pure_rose_quartz_gem": "Pure Rose Quartz",
+	"item.woods_mod.purity_gem": "§3Purity Gem",
 	
 
 	"block.woods_mod.mossy_oak_log": "Mossy Oak Log",
@@ -64,8 +65,12 @@
 	
 	"block.woods_mod.dirt_slab": "Dirt Slab",
 	"block.woods_mod.grass_slab": "Grass Slab",
+	"block.woods_mod.sand_slab": "Sand Slab",
+	"block.woods_mod.gravel_slab": "Gravel Slab",
 	"block.woods_mod.dirt_stairs": "Dirt Stairs",
 	"block.woods_mod.grass_stairs": "Grass Stairs",
+	"block.woods_mod.sand_stairs": "Sand Stairs",
+	"block.woods_mod.gravel_stairs": "Gravel Stairs",
 	
 	"block.woods_mod.mossy_dirt": "Mossy Dirt",
 	"block.woods_mod.moss": "Moss",
@@ -78,6 +83,7 @@
 	"block.woods_mod.green_opal_ore": "Green Opal Ore",
 	"block.woods_mod.rhodochrosite_ore": "Rhodochrosite Ore",
 	"block.woods_mod.rose_quartz_ore": "Rose Quartz Ore",
+	"block.woods_mod.purity_ore": "§3Purity Ore",
 	"block.woods_mod.epidote_block": "Epidote Block",
 	"block.woods_mod.fire_opal_block": "Fire Opal Block",
 	"block.woods_mod.heliodor_block": "Heliodor Block",
@@ -86,6 +92,7 @@
 	"block.woods_mod.green_opal_block": "Green Opal Block",
 	"block.woods_mod.rhodochrosite_block": "Rhodochrosite Block",
 	"block.woods_mod.rose_quartz_block": "Rose Quartz Block",
+	"block.woods_mod.purity_gem_block": "§3Purity Gem Block",
 	
 	"block.woods_mod.wooden_box": "Wooden Box",
 	

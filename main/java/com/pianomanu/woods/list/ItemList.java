@@ -23,6 +23,7 @@ public class ItemList {
     public static Item pure_rhodochrosite_gem = null;
     public static Item pure_rose_quartz_gem = null;
     public static Item pure_green_opal_gem = null;
+    public static Item purity_gem;
 
 
 
@@ -48,6 +49,8 @@ public class ItemList {
     public static Item mossy_dark_oak_slab;
     public static Item grass_slab;
     public static Item dirt_slab;
+    public static Item sand_slab;
+    public static Item gravel_slab;
 
     public static Item mossy_oak_stairs;
     public static Item mossy_birch_stairs;
@@ -57,6 +60,8 @@ public class ItemList {
     public static Item mossy_dark_oak_stairs;
     public static Item grass_stairs;
     public static Item dirt_stairs;
+    public static Item sand_stairs;
+    public static Item gravel_stairs;
 
     public static Item mossy_oak_fence;
     public static Item mossy_birch_fence;
@@ -80,6 +85,7 @@ public class ItemList {
     public static Item rhodochrosite_ore;
     public static Item rose_quartz_ore;
     public static Item green_opal_ore;
+    public static Item purity_ore;
 
     public static Item mossy_dirt;
     public static Item moss;
@@ -102,6 +108,7 @@ public class ItemList {
     public static Item rhodochrosite_block;
     public static Item rose_quartz_block;
     public static Item green_opal_block;
+    public static Item purity_gem_block;
 
     public static Item oak_flexible_branch;
 }

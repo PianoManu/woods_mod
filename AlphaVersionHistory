@@ -63,9 +63,11 @@ Alpha versions
 		X Grass slabs cannot be placed on top of each other to make a grass block, because I had problems with the models
 		X Grass stairs have weird side textures, will be fixed later
 		# If you find bugs, let me know
+		
 	====================================================
 		Release 0.1.0 --- 24.01.2020 - Version 0.0.4
 		Test Release - still alpha
+		(see ReleasesHistory for more information)
 	====================================================
 	
 	Version 0.0.5 --- 26.01.2020
@@ -90,3 +92,23 @@ Alpha versions
 		* Fixed a funny bug, that moss would drop diamond blocks - maybe I was drunk or just too tired back then ^^
 		X Found a bug that broken items have NBT-tags not allowing them to be stacked with normal items
 		# If you find bugs, let me know
+		
+	Version 0.0.7 --- 04.02.2020
+		+ Added rhodochrosite and rose_quartz ore generation
+		+ Added more oak branches in various forms, the "flexible" one behaves like pipes (they connect to other blocks)
+		+ Added sand and gravel slabs, they are generated similar to grass and stone slabs and are affected by gravity
+		+ Added some lootTables and recipes
+		X "Item-NBT-tag-bug" (see Version 0.0.6) is weird, still not fixed (I don't know how), but maybe it's not that bad
+		# If you find bugs, let me know
+	Version 0.0.8 --- 08.02.2020
+		+ Added sand and gravel stairs, they are affected by gravity
+		+ Added and fixed some lootTables and recipes
+		* Fixed "Item-NBT-tag-bug" (see Version 0.0.6 and 0.0.7)
+		* Changed description
+		# If you find bugs, let me know
+		
+	=================================================================
+		Release 0.1.1 --- 08.02.2020 - Version 0.0.8 (last Alpha)
+		First beta release
+		(see ReleasesHistory for more information)
+	=================================================================

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:purity_gem_block"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:purity_gem",
+    "count": 9
+  }
+}

@@ -89,6 +89,9 @@ public class WoodsLootTables extends WoodsBaseLootTableProvider {
 
         //lootTables.put(BlockList.wooden_box, createStandardTable("wooden_box", BlockList.wooden_box));
 
+        lootTables.put(BlockList.sand_slab, createStandardTable("sand_slab", BlockList.sand_slab));
+        lootTables.put(BlockList.gravel_slab, createStandardTable("gravel_slab", BlockList.gravel_slab));
+
 
 
     }

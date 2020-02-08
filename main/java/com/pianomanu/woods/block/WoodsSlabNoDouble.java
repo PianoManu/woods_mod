@@ -24,6 +24,7 @@ import java.util.Random;
 
 public class WoodsSlabNoDouble extends SlabBlock implements IGrowable {
 
+    //TODO: double grass slab makes grass block
     public WoodsSlabNoDouble(Properties properties) {
         super(properties);
     }
@@ -43,6 +44,7 @@ public class WoodsSlabNoDouble extends SlabBlock implements IGrowable {
         }
     }*/
 
+    @SuppressWarnings("deprecation")
     public boolean canGrow(IBlockReader worldIn, BlockPos pos, BlockState state, boolean isClient) {
         return worldIn.getBlockState(pos.up()).isAir();
     }
@@ -51,6 +53,7 @@ public class WoodsSlabNoDouble extends SlabBlock implements IGrowable {
         return true;
     }
 
+    @SuppressWarnings("deprecation")
     public void grow(World worldIn, Random rand, BlockPos pos, BlockState state) {
         BlockPos blockpos = pos.up();
         BlockState blockstate = Blocks.GRASS.getDefaultState();

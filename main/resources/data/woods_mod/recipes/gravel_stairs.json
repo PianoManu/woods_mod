@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "result": {
+    "item": "woods_mod:gravel_stairs",
+    "count": 4
+  }
+}
