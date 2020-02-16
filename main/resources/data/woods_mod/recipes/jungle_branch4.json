@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:jungle_flexible_branch"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:jungle_branch"
+  }
+}

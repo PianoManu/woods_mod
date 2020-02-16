@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woods_mod:spruce_pillar_branch"
+    ]
+  },
+  "criteria": {
+    "has_branches": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "woods_mod:spruce_branch"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woods_mod:spruce_pillar_branch"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_branches",
+      "has_the_recipe"
+    ]
+  ]
+}

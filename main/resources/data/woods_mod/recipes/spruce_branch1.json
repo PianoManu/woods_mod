@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:spruce_all_branch"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:spruce_branch"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "woods_mod:block/all_branch_inventory",
+    "textures": {
+        "0": "woods_mod:block/spruce_branch"
+    }
+}

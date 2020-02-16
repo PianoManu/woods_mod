@@ -49,3 +49,6 @@ Beta "Releases"
 		* Grass stairs now have a better model
 		* Grass slabs and grass stairs now have in every biome the same texture as grass blocks
 		* Changed some mod descriptions
+		
+		Release 0.1.1 (a) --- 16.02.2020
+			+ Added 5 remaining branch-types (birch, spruce, jungle, dark_oak and acacia) and their lootTables and recipes

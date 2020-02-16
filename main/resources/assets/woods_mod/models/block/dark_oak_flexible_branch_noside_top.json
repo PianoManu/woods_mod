@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "0": "woods_mod:block/dark_oak_branch",
+        "inside": "woods_mod:block/dark_oak_branch",
+        "particle": "woods_mod:block/dark_oak_branch"
+    },
+    "elements": [
+        {   "from": [ 4, 4, 4 ],
+            "to": [ 12, 12, 12 ],
+            "faces": {
+                "north": {"uv": [4, 4, 8, 8], "texture": "#0" }
+            }
+        }
+    ]
+}

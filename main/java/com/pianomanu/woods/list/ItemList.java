@@ -93,6 +93,32 @@ public class ItemList {
     public static Item oak_cross_branch;
     public static Item oak_pillar_branch;
     public static Item oak_all_branch;
+    public static Item oak_flexible_branch;
+    public static Item birch_branch;
+    public static Item birch_cross_branch;
+    public static Item birch_pillar_branch;
+    public static Item birch_all_branch;
+    public static Item birch_flexible_branch;
+    public static Item spruce_branch;
+    public static Item spruce_cross_branch;
+    public static Item spruce_pillar_branch;
+    public static Item spruce_all_branch;
+    public static Item spruce_flexible_branch;
+    public static Item jungle_branch;
+    public static Item jungle_cross_branch;
+    public static Item jungle_pillar_branch;
+    public static Item jungle_all_branch;
+    public static Item jungle_flexible_branch;
+    public static Item dark_oak_branch;
+    public static Item dark_oak_cross_branch;
+    public static Item dark_oak_pillar_branch;
+    public static Item dark_oak_all_branch;
+    public static Item dark_oak_flexible_branch;
+    public static Item acacia_branch;
+    public static Item acacia_cross_branch;
+    public static Item acacia_pillar_branch;
+    public static Item acacia_all_branch;
+    public static Item acacia_flexible_branch;
 
     public static Item wooden_box;
 
@@ -109,6 +135,4 @@ public class ItemList {
     public static Item rose_quartz_block;
     public static Item green_opal_block;
     public static Item purity_gem_block;
-
-    public static Item oak_flexible_branch;
 }

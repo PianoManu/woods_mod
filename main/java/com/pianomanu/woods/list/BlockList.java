@@ -79,6 +79,42 @@ public class BlockList {
     public static WoodsCrossBranchBlock oak_cross_branch = null;
     public static WoodsPillarBranchBlock oak_pillar_branch = null;
     public static WoodsAllBranchBlock oak_all_branch = null;
+    public static WoodsBaseBranchBlock oak_flexible_branch = null;
+    public static WoodsBranchBlock birch_branch = null;
+    public static WoodsUpBranchBlock birch_up_branch = null;
+    public static WoodsWallBranchBlock birch_wall_branch = null;
+    public static WoodsCrossBranchBlock birch_cross_branch = null;
+    public static WoodsPillarBranchBlock birch_pillar_branch = null;
+    public static WoodsAllBranchBlock birch_all_branch = null;
+    public static WoodsBaseBranchBlock birch_flexible_branch = null;
+    public static WoodsBranchBlock spruce_branch = null;
+    public static WoodsUpBranchBlock spruce_up_branch = null;
+    public static WoodsWallBranchBlock spruce_wall_branch = null;
+    public static WoodsCrossBranchBlock spruce_cross_branch = null;
+    public static WoodsPillarBranchBlock spruce_pillar_branch = null;
+    public static WoodsAllBranchBlock spruce_all_branch = null;
+    public static WoodsBaseBranchBlock spruce_flexible_branch = null;
+    public static WoodsBranchBlock jungle_branch = null;
+    public static WoodsUpBranchBlock jungle_up_branch = null;
+    public static WoodsWallBranchBlock jungle_wall_branch = null;
+    public static WoodsCrossBranchBlock jungle_cross_branch = null;
+    public static WoodsPillarBranchBlock jungle_pillar_branch = null;
+    public static WoodsAllBranchBlock jungle_all_branch = null;
+    public static WoodsBaseBranchBlock jungle_flexible_branch = null;
+    public static WoodsBranchBlock dark_oak_branch = null;
+    public static WoodsUpBranchBlock dark_oak_up_branch = null;
+    public static WoodsWallBranchBlock dark_oak_wall_branch = null;
+    public static WoodsCrossBranchBlock dark_oak_cross_branch = null;
+    public static WoodsPillarBranchBlock dark_oak_pillar_branch = null;
+    public static WoodsAllBranchBlock dark_oak_all_branch = null;
+    public static WoodsBaseBranchBlock dark_oak_flexible_branch = null;
+    public static WoodsBranchBlock acacia_branch = null;
+    public static WoodsUpBranchBlock acacia_up_branch = null;
+    public static WoodsWallBranchBlock acacia_wall_branch = null;
+    public static WoodsCrossBranchBlock acacia_cross_branch = null;
+    public static WoodsPillarBranchBlock acacia_pillar_branch = null;
+    public static WoodsAllBranchBlock acacia_all_branch = null;
+    public static WoodsBaseBranchBlock acacia_flexible_branch = null;
 
 
     public static WoodsMossBlock moss = null;
@@ -103,6 +139,4 @@ public class BlockList {
     //for tests only
     public static final InventoryBlock INVENTORY_BLOCK = new InventoryBlock();
     public static WoodsGrassBlock grass_block = null;
-    public static WoodsBaseBranchBlock oak_flexible_branch = null;
-
 }

@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 
 import com.pianomanu.woods.world.gen.feature.MossyOakBigTreeFeature;
 import com.pianomanu.woods.world.gen.feature.MossyTreeFeature;
+import com.pianomanu.woods.world.gen.feature.OakBranchesTreeFeature;
 import net.minecraft.block.trees.Tree;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.BigTreeFeature;
