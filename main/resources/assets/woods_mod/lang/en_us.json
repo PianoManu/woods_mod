@@ -129,5 +129,9 @@
 	"container.woods_mod.wooden_box": "Wooden Box",
 	
 	
-	"biome.woods_mod.wet_forest_biome": "Wet Forest"
+	"biome.woods_mod.wet_forest_biome": "Wet Forest",
+	
+	
+	"itemGroup.woods_item_group_blocks": "Woods Blocks",
+	"itemGroup.woods_item_group_items": "Woods Items"
 }
