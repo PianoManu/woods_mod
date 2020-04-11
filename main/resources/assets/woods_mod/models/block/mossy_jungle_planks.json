@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "woods_mod:block/mossy_jungle_planks"
+    }
+}

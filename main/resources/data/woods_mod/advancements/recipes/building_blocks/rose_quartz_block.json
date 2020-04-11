@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woods_mod:rose_quartz_block"
+    ]
+  },
+  "criteria": {
+    "has_pure_rose_quartz_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "woods_mod:pure_rose_quartz_gem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woods_mod:rose_quartz_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pure_rose_quartz_gem",
+      "has_the_recipe"
+    ]
+  ]
+}

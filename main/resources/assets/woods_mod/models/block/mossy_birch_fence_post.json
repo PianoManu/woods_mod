@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_post",
+    "textures": {
+        "texture": "woods_mod:block/mossy_birch_planks"
+    }
+}

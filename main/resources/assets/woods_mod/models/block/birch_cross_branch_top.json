@@ -1,0 +1,60 @@
+{
+	"textures": {
+		"0": "woods_mod:block/birch_branch",
+		"particle": "woods_mod:block/birch_branch"
+	},
+	"elements": [
+		{
+			"from": [0, 8, 4],
+			"to": [4, 16, 12],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"south": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"west": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"down": {"uv": [8, 0, 10, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 8, 4],
+			"to": [16, 16, 12],
+			"faces": {
+				"north": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"east": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"up": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 8, 12],
+			"to": [12, 16, 16],
+			"faces": {
+				"east": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"south": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"west": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"up": {"uv": [0, 6, 4, 8], "texture": "#0"},
+				"down": {"uv": [0, 0, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 8, 0],
+			"to": [12, 16, 4],
+			"faces": {
+				"north": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"east": {"uv": [14, 0, 16, 4], "texture": "#0"},
+				"west": {"uv": [8, 0, 10, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 2], "texture": "#0"},
+				"down": {"uv": [0, 6, 4, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 8, 4],
+			"to": [12, 16, 12],
+			"faces": {
+				"up": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"down": {"uv": [4, 4, 8, 8], "texture": "#0"}
+			}
+		}
+	]
+}

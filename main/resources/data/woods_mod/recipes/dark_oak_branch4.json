@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:dark_oak_flexible_branch"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:dark_oak_branch"
+  }
+}

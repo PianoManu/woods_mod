@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "woods_mod:block/mossy_dirt_top",
+        "down": "block/dirt",
+        "up": "woods_mod:block/mossy_dirt_top",
+        "north": "woods_mod:block/mossy_dirt_side",
+        "east": "woods_mod:block/mossy_dirt_side",
+        "south": "woods_mod:block/mossy_dirt_side",
+        "west": "woods_mod:block/mossy_dirt_side"
+    }
+}

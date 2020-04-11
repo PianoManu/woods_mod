@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "x"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item": "woods_mod:mossy_jungle_log"
+        }
+    },
+    "result":
+    {
+        "item": "woods_mod:mossy_jungle_planks",
+        "count": 4
+    }
+}

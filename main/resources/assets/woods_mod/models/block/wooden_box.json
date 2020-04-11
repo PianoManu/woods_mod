@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "woods_mod:block/wooden_box_top",
+        "side": "woods_mod:block/wooden_box_side",
+        "bottom": "woods_mod:block/wooden_box_bottom"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "woods_mod:block/flexible_branch_inventory",
+    "textures": {
+        "branch": "woods_mod:block/acacia_branch"
+    }
+}

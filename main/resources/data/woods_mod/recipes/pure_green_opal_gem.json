@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "woods_mod:green_opal_gem"
+    },
+    "I": {
+      "item": "woods_mod:purity_gem"
+    }
+  },
+  "result": {
+    "item": "woods_mod:pure_green_opal_gem"
+  }
+}

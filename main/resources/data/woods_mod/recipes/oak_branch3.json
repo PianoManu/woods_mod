@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:oak_pillar_branch"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:oak_branch"
+  }
+}

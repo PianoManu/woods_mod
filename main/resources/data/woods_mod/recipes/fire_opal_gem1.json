@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "woods_mod:fire_opal_block"
+    }
+  ],
+  "result": {
+    "item": "woods_mod:fire_opal_gem",
+    "count": 9
+  }
+}

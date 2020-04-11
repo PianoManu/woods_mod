@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "woods_mod:block/grass_slab" },
+        "type=top": { "model": "woods_mod:block/grass_slab_top" },
+        "type=double": { "model": "block/grass_block" }
+    }
+}

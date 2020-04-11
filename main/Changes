@@ -1,0 +1,25 @@
+09.04.2020
+-	set up environment
+-	deleted trees (as block-classes and in init-files), maybe rewrite later
+-	fixed errors in WoodsBlock.java (Blocks.isDirt() doesn't exist any longer)
+-	test WoodsBaseBranchBlock.java, WoodsMossBlock.java WoodsForestLanterns.java, WoodsForestLanternsTest.java, WoodsPillarBranchBlock.java, WoodsSlabNoDouble.java and WoodsBranchBlock.java without BlockRenderLayer, which doesn't exist any longer
+-	fixed errors in WoodsBranchBlock.java, WoodsMossBlock.java, WoodsForestLanternsTest.java and WoodsForestLanterns.java (function name has changed)
+-	WoodsSlabNoDouble.java uses Grow-Method implemented for IGrowable, which takes now a ServerWorld-parameter instead of world
+-	WoodsSlabNoDouble.java had an obfuscated function call, replaced it with deobfucated one
+
+11.04.2020
+-	moved WoodsCrossBranchBlock.java from /block/trees to /block and fixed some errors
+-	test WoodsStairsCoutoutMipped.java, WoodsWallBranchBlock.java and WoodsUpBranchBlock.java without BlockRenderLayer, which doesn't exist any longer
+-	WoodsUpBranchBlock.java had an obfuscated function call, replaced it with deobfucated one
+-	deleted some unused imports
+-	disabled LakeFeature because of too many errors, will rewrite later
+-	many errors in WoodsDefaultBiomeFeatures and WoodsFeaturesInVanillaBiomes: Biome-Feature-Initialisation changed a bit
+-	INVENTORY_BLOCK is currently useless and will be reimplemented later
+-	deleted treefeature, maybe rewrite later
+-	due to no trees, WoodsSapling is currently useless
+-	removed overwritten isSolid-function in WoodsSlabNoDouble, since it is final
+-	WoodsBaseLootTableProvider.java and WoodsBiome had obfuscated function calls, replaced these with deobfucated ones
+-	changed BlockPos.MutableBlockPos to BlockPos.Mutable in maaaaaany classes 'cause it was renamed in the Minecraft-BlockPos-class
+-	WoodsWorldType is removed, will maybe reimplement later
+-	many crashes, pretty sure most of them because of removed trees
+-	fixed datatags (deleted saplings)

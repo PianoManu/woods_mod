@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "woods_mod:rhodochrosite_gem"
+    ]
+  },
+  "criteria": {
+    "has_rhodochrosite_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "woods_mod:rhodochrosite_gem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "woods_mod:rhodochrosite_gem"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rhodochrosite_gem",
+      "has_the_recipe"
+    ]
+  ]
+}

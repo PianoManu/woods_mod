@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "woods_mod:mossy_oak_planks",
+    "woods_mod:mossy_spruce_planks",
+    "woods_mod:mossy_birch_planks",
+    "woods_mod:mossy_jungle_planks",
+    "woods_mod:mossy_acacia_planks",
+    "woods_mod:mossy_dark_oak_planks"
+  ]
+}

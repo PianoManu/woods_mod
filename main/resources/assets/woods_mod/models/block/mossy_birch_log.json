@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "woods_mod:block/mossy_birch_log_top",
+        "side": "woods_mod:block/mossy_birch_log"
+    }
+}

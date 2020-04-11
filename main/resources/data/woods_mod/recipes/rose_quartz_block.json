@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "woods_mod:pure_rose_quartz_gem"
+    }
+  },
+  "result": {
+    "item": "woods_mod:rose_quartz_block"
+  }
+}

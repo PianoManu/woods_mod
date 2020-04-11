@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "woods_mod:block/mossy_spruce_slab" },
+        "type=top": { "model": "woods_mod:block/mossy_spruce_slab_top" },
+        "type=double": { "model": "woods_mod:block/mossy_spruce_planks" }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "woods_mod:block/cross_branch_inventory",
+    "textures": {
+        "branch": "woods_mod:block/oak_branch"
+    }
+}

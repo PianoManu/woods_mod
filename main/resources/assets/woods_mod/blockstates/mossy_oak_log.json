@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "woods_mod:block/mossy_oak_log" },
+        "axis=z":  { "model": "woods_mod:block/mossy_oak_log", "x": 90 },
+        "axis=x":  { "model": "woods_mod:block/mossy_oak_log", "x": 90, "y": 90 }
+    }
+}

@@ -1,0 +1,20 @@
+{
+	"textures": {
+        "particle": "woods_mod:block/dark_oak_branch",
+        "branch": "woods_mod:block/dark_oak_branch"
+    },
+	"elements": [
+		{
+			"from": [4, 4, 0],
+			"to": [12, 12, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 8, 8], "texture": "#branch"},
+				"east": {"uv": [8, 0, 16, 4], "texture": "#branch"},
+				"south": {"uv": [4, 4, 8, 8], "texture": "#branch"},
+				"west": {"uv": [8, 0, 16, 4], "texture": "#branch"},
+				"up": {"uv": [0, 0, 4, 8], "texture": "#branch"},
+				"down": {"uv": [0, 0, 4, 8], "texture": "#branch"}
+			}
+		}
+	]
+}

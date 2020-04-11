@@ -1,0 +1,11 @@
+{
+    "variants": {
+		"snowy=false": [
+			{ "model": "woods_mod:block/mossy_dirt" },
+			{ "model": "woods_mod:block/mossy_dirt", "y": 90 },
+			{ "model": "woods_mod:block/mossy_dirt", "y": 180 },
+			{ "model": "woods_mod:block/mossy_dirt", "y": 270 }
+		],
+		"snowy=true":  { "model": "block/grass_block_snow" }
+    }
+}
