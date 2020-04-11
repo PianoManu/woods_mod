@@ -16,7 +16,7 @@ import net.minecraft.world.storage.WorldInfo;
 public class WoodsWorldType extends WorldType {
 
     public WoodsWorldType() {
-        super("woods_world_type");
+        super("woods_world_type");//ttt
     }
     //TODO new worldtype
     /*public ChunkGenerator<?> createChunkGenerator(World world) {
